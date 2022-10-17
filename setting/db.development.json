@@ -1,0 +1,13 @@
+{
+	"MySQL" : {
+		"host": "localhost",
+		"user": "root",
+		"password" : "password",
+		"database" : "database"
+	},
+	"Redis": { 
+		"url": "redis://127.0.0.1",
+		"legacyMode": true,
+		"port": 6379
+	}
+}

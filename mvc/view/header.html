@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= (locals.Title ? Title : '')%></title>
+	<link rel="stylesheet" href="/js/plugins/font-awesome/css/all.min.css" />
+	<link rel="stylesheet" href="/css/daterangepicker.css" />
+	<link rel="stylesheet" href="/bundles/chartjs/Chart.min.css" />
+	<link rel="stylesheet" href="/css/global.css" />
+	<script src="/js/plugins/jquery.js"></script>
+	<script src="/js/plugins/halo.crud.js"></script>
+	<script src="/js/plugins/halo.tab.js"></script>
+	<script src="/js/plugins/halo.fullscreen.js"></script>
+	<script src="/js/plugins/halo.search.js"></script>
+	<script src="/js/plugins/halo.pagination.js"></script>
+	<script src="/js/plugins/halo.loading.js"></script>
+	<script>FontAwesomeConfig = { autoReplaceSvg: false }</script>
+	<script src="/js/plugins/font-awesome/js/all.min.js"></script>
+	<script src="/js/global.js"></script>
+	<% if(typeof pageJS !== "undefined") { %>
+		<% for(let i=0;i<pageJS.length;i++) { %>
+			<script src="/js/page/<%=pageJS[i]%>"></script>
+		<% } %>
+	<% } %>
+	<script src="/js/plugins/moment.min.js"></script>
+	<script src="/js/plugins/daterangepicker.min.js"></script>
+	<script src="/bundles/chartjs/Chart.min.js"></script>
+	<script src="/bundles/chartjs/chartjs-plugin-datalabels.min.js"></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+	<header>
+		<div id="top">
+			<a id="logo" href="/"></a>
+			<% 
+			var currentMenu = {
+				'name': '',
+				'breadcrumb': ['<a href="/">Home</a>']
+			};
+			if(req.session.Login.isLogin) { %>
+				<div class="menus noselect"> 
+					<% for(categoryName in Config.menu) {
+						var isActive = false;
+						var firstMenuLink = '';
+						
+						// Check if there are any pages available with current user's permission
+						if((function(){
+							var hasAnyAccessibleSubPage = false;
+							var subpage = Config.menu[categoryName];
+							for(subPageName in subpage) {
+								if(subpage[subPageName].role_id.indexOf(req.session.Login.role_id) > -1) {
+									hasAnyAccessibleSubPage = true
+									if(firstMenuLink == '') firstMenuLink = subpage[subPageName].page_url;
+								}
+								if(subpage[subPageName].page_url == controllerUrlInDB) {
+									isActive = true;
+									currentMenu.name = subPageName;
+									currentMenu.breadcrumb.push(categoryName);
+									currentMenu.breadcrumb.push(`<span>${subPageName}</span>`);
+								}
+							}
+							return hasAnyAccessibleSubPage;
+						})() || false)
+						{%>
+							<div class="menu<%= (isActive ? ' active':'')%>">
+								<a href="<%- firstMenuLink %>"><%= categoryName %></a>
+								
+								<div class="sub-menu<%= (Object.keys(Config.menu[categoryName]).length > 7 ? ' overflow' : '') %>">
+									<%
+										var subpages = Config.menu[categoryName];
+										for(subPageName in subpages) {
+									%>
+										<a href="<%= subpages[subPageName].page_url %>" <%- (subpages[subPageName].page_url == controllerUrlInDB ? 'class="active"' : '' ) %>>
+											<%= subPageName %>
+										</a>
+									<%
+										}
+									%>
+								</div>
+							</div>
+						<% } %>
+					<% } %>
+				</div>
+			<% } %>
+		</div>
+		<% if(req.session.Login.isLogin) { %>
+		<div class="breadcrumb">
+			<div class="summary">
+				<div class="menu-name"><span><%= currentMenu.name %></span></div>
+				<div class="menu-tree"><%- currentMenu.breadcrumb.join(' &gt; ') %></div>
+			</div>
+
+			<div class="filters">
+				<%
+				if(typeof filters !== "undefined") {
+					for(var i=0;filters.length > i;i++) {
+				%>
+						<%- filters[i] %>
+				<% 
+					}
+				}
+				%>
+			</div>
+			<div class="buttons">
+				<%
+				if(typeof buttons !== "undefined") {
+					for(var i=0;buttons.length > i;i++) {
+				%>
+						<%- buttons[i] %>
+				<% 
+					}
+				}
+				%>
+			</div>
+		</div>
+		<% } %>
+	</header>
+	

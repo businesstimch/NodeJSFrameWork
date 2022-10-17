@@ -1,0 +1,6664 @@
+<main id="api">
+	<div class="main-menu">
+		<div class="name">
+			<div class="title">
+				API Document <i class="fas fa-caret-down"></i>
+			</div>
+			<div class="page">
+				<a href="/">Home</a>
+				<span> &gt; </span>
+				<a href="/api/">API</a>
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Overview Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					OverviewSet
+					<span>Overview</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/SAP/Z_HALO_SRV/OverviewSet?$filter=ZTQDT eq '11252019' and ZTSHOP eq 'GA'&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_D_OVERVIEW</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTQDT</div>
+							<div>Date</div>
+						</div>
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>Line</div>
+						</div>
+						<div>
+							<div>ZTTRST</div>
+							<div>Total Required at Stations</div>
+						</div>
+						<div>
+							<div>ZTGATE</div>
+							<div>In Gates</div>
+						</div>
+						<div>
+							<div>ZTCKKRO</div>
+							<div>Clocked in Kronos</div>
+						</div>
+						<div>
+							<div>ZTTONLINE</div>
+							<div>Total on the line</div>
+						</div>
+						<div>
+							<div>ZTTMSIGIN</div>
+							<div>T/M Signed In to rotation plan</div>
+						</div>
+						<div>
+							<div>ZTTMNOSIGIN</div>
+							<div>In Kronos but not signed in</div>
+						</div>
+						<div>
+							<div>ZTEMTST</div>
+							<div>Empty Stations</div>
+						</div>
+						<div>
+							<div>ZTSIGNOTR</div>
+							<div>Signed in but not Trained</div>
+						</div>
+						<div>
+							<div>ZTEXSFSUR</div>
+							<div>Extra shift support</div>
+						</div>
+						<div>
+							<div>ZTQASUR</div>
+							<div>Quality support</div>
+						</div>
+						<div>
+							<div>ZTTRAIN</div>
+							<div>Training</div>
+						</div>
+						<div>
+							<div>ZTINSPEC</div>
+							<div>Inspection</div>
+						</div>
+						<div>
+							<div>ZTSPPRO</div>
+							<div>Special Project</div>
+						</div>
+						<div>
+							<div>ZTCLEAN</div>
+							<div>Cleaning</div>
+						</div>
+						<div>
+							<div>ZTYASW</div>
+							<div>Yard Sweep</div>
+						</div>
+						<div>
+							<div>ZTRPSUR</div>
+							<div>Repair Support</div>
+						</div>
+						<div>
+							<div>ZTOTHER</div>
+							<div>Other</div>
+						</div>
+						<div>
+							<div>ZTTRMTOT</div>
+							<div>Trim TOTAL</div>
+						</div>
+						<div>
+							<div>ZTCHATOT</div>
+							<div>Chassis TOTAL</div>
+						</div>
+						<div>
+							<div>ZTFALTOT</div>
+							<div>Final TOTAL</div>
+						</div>
+						<div>
+							<div>ZTPDITOT</div>
+							<div>PDI TOTAL</div>
+						</div>
+						<div>
+							<div>ZTGATOT</div>
+							<div>GA TOTAL</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{ 
+						"d" : { 
+							"results": [
+            		{
+									"__metadata": {
+											"id": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/OverviewSet(ZTQDT='20191125',ZTSHOP='GA',ZTLINE='T1')",
+											"uri": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/OverviewSet(ZTQDT='20191125',ZTSHOP='GA',ZTLINE='T1')",
+											"type": "Z_HALO_SRV.Overview"
+									},
+									"ZTQDT": "20191125",
+									"ZTSHOP": "GA",
+									"ZTLINE": "T1",
+									"ZTTRST": "0 ",
+									"ZTGATE": "0 ",
+									"ZTCKKRO": "27 ",
+									"ZTTONLINE": "0 ",
+									"ZTTMSIGIN": "0 ",
+									"ZTTMNOSIGIN": "27 ",
+									"ZTEMTST": "13 ",
+									"ZTSIGNOTR": "0 ",
+									"ZTEXSFSUR": "",
+									"ZTQASUR": "",
+									"ZTTRAIN": "",
+									"ZTINSPEC": "",
+									"ZTSPPRO": "",
+									"ZTCLEAN": "",
+									"ZTYASW": "",
+									"ZTRPSUR": "",
+									"ZTOTHER": "",
+									"ZTLIGR": "TRIM",
+									"ZTTOTAL": "",
+									"ZTSORT": "001",
+									"SUCCESS": "",
+									"ERR_MSG": ""
+								}
+							]
+						} 
+					} 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Overview Line Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					OverviewLineSet
+					<span>Overview Line</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/OverviewLineSet?$filter=ZTDATE eq '10082019' and ZTSHOP eq 'GA' and ZTLINE eq 'T1' and ZTSHIFT eq 'A'&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_D_OVERVIEW</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDATE</div>
+							<div>Date</div>
+						</div>
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>Line</div>
+						</div>
+						<div class="key">
+							<div>ZTSHIFT</div>
+							<div>Shift</div>
+						</div>
+						<div>
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div>
+							<div>ZTSUB</div>
+							<div>Role</div>
+						</div>
+						<div>
+							<div>ZTLH</div>
+							<div>Left Hand Side</div>
+						</div>
+						<div>
+							<div>ZTRH</div>
+							<div>Right Hand Side</div>
+						</div>
+						<div>
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTBADG</div>
+							<div>Badge Number</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Member Name</div>
+						</div>
+						<div>
+							<div>ZTFLAG</div>
+							<div>Login Status Flag</div>
+						</div>
+						<div>
+							<div>ZTCOLOR</div>
+							<div>Login Status Color</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"d" : {
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/OverviewLineSet(ZTDATE='20191025',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='A')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/OverviewLineSet(ZTDATE='20191025',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='A')",
+										"type" : "Z_HALO_SRV.OverviewLine"
+									},
+									"ZTDATE" : "20191025",
+									"ZTSHOP" : "GA",
+									"ZTLINE" : "C1",
+									"ZTSHIFT" : "A",
+									"ZTSTAT" : "C1-01L",
+									"ZTSUB" : "",
+									"ZTLH" : "X",
+									"ZTRH" : "",
+									"ZTTEM" : "C1A",
+									"ZTBADG" : "00000000000000000000",
+									"ZTMNE" : "",
+									"ZTFLAG" : "3",
+									"ZTCOLOR" : "BLUE",
+									"SUCCESS" : "",
+									"ERR_MSG" : ""
+								}
+							]
+						}
+					}
+					</div>
+				</div>
+			</div>
+			<div class="api">
+					<div class="name">
+						NotSignedListSet
+						<span>In Kronos but not signed in</span>
+					</div>
+					<div class="spec-group">
+						<div class="method spec">GET</div>
+						<div class="url spec">
+							/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet?$filter=ZTDATE eq '' and ZTSHOP eq 'GA' and ZTLINE eq 'C1'&$format=json
+						</div>
+						<div class="json spec">
+							{"d":{"results":[{"__metadata":{"id":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","uri":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","type":"Z_HALO_SRV.NotSignedList"},"ZTDATE":"20191204","ZTSHOP":"GA","ZTLINE":"C1","ZTSHIFT":"B","ZTMNO":"101256","ZTMNE":"Abel, Joseph H","ZTKRNIN":"2019-12-04 06:23:00","SUCCESS":"S","ERR_MSG":""},{"__metadata":{"id":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","uri":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","type":"Z_HALO_SRV.NotSignedList"},"ZTDATE":"20191204","ZTSHOP":"GA","ZTLINE":"C1","ZTSHIFT":"B","ZTMNO":"102867","ZTMNE":"Ashley, Timothy E","ZTKRNIN":"2019-12-04 06:23:00","SUCCESS":"S","ERR_MSG":""},{"__metadata":{"id":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","uri":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","type":"Z_HALO_SRV.NotSignedList"},"ZTDATE":"20191204","ZTSHOP":"GA","ZTLINE":"C1","ZTSHIFT":"B","ZTMNO":"102882","ZTMNE":"Muhammad, Craig","ZTKRNIN":"2019-12-04 06:24:00","SUCCESS":"S","ERR_MSG":""},{"__metadata":{"id":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","uri":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","type":"Z_HALO_SRV.NotSignedList"},"ZTDATE":"20191204","ZTSHOP":"GA","ZTLINE":"C1","ZTSHIFT":"B","ZTMNO":"104587","ZTMNE":"Williams, Jimmy G","ZTKRNIN":"2019-12-04 06:09:00","SUCCESS":"S","ERR_MSG":""},{"__metadata":{"id":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","uri":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","type":"Z_HALO_SRV.NotSignedList"},"ZTDATE":"20191204","ZTSHOP":"GA","ZTLINE":"C1","ZTSHIFT":"B","ZTMNO":"104592","ZTMNE":"Anderson, Alfred S","ZTKRNIN":"2019-12-04 06:23:00","SUCCESS":"S","ERR_MSG":""},{"__metadata":{"id":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","uri":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","type":"Z_HALO_SRV.NotSignedList"},"ZTDATE":"20191204","ZTSHOP":"GA","ZTLINE":"C1","ZTSHIFT":"B","ZTMNO":"105034","ZTMNE":"Johnson, Jerry L","ZTKRNIN":"2019-12-04 06:24:00","SUCCESS":"S","ERR_MSG":""},{"__metadata":{"id":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","uri":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","type":"Z_HALO_SRV.NotSignedList"},"ZTDATE":"20191204","ZTSHOP":"GA","ZTLINE":"C1","ZTSHIFT":"B","ZTMNO":"105039","ZTMNE":"Oliver, Eric M","ZTKRNIN":"2019-12-04 06:25:00","SUCCESS":"S","ERR_MSG":""},{"__metadata":{"id":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","uri":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","type":"Z_HALO_SRV.NotSignedList"},"ZTDATE":"20191204","ZTSHOP":"GA","ZTLINE":"C1","ZTSHIFT":"B","ZTMNO":"105392","ZTMNE":"Brown, Courtney A","ZTKRNIN":"2019-12-04 06:23:00","SUCCESS":"S","ERR_MSG":""},{"__metadata":{"id":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","uri":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","type":"Z_HALO_SRV.NotSignedList"},"ZTDATE":"20191204","ZTSHOP":"GA","ZTLINE":"C1","ZTSHIFT":"B","ZTMNO":"105428","ZTMNE":"Moore, Dantrell J","ZTKRNIN":"2019-12-04 08:00:00","SUCCESS":"S","ERR_MSG":""},{"__metadata":{"id":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","uri":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","type":"Z_HALO_SRV.NotSignedList"},"ZTDATE":"20191204","ZTSHOP":"GA","ZTLINE":"C1","ZTSHIFT":"B","ZTMNO":"105434","ZTMNE":"White, Lotoryo J","ZTKRNIN":"2019-12-04 06:23:00","SUCCESS":"S","ERR_MSG":""},{"__metadata":{"id":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","uri":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","type":"Z_HALO_SRV.NotSignedList"},"ZTDATE":"20191204","ZTSHOP":"GA","ZTLINE":"C1","ZTSHIFT":"B","ZTMNO":"105566","ZTMNE":"Phillips, Robert","ZTKRNIN":"2019-12-04 06:23:00","SUCCESS":"S","ERR_MSG":""},{"__metadata":{"id":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","uri":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","type":"Z_HALO_SRV.NotSignedList"},"ZTDATE":"20191204","ZTSHOP":"GA","ZTLINE":"C1","ZTSHIFT":"B","ZTMNO":"903103669","ZTMNE":"Shedrick, Darryl","ZTKRNIN":"2019-12-04 02:53:00","SUCCESS":"S","ERR_MSG":""},{"__metadata":{"id":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","uri":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","type":"Z_HALO_SRV.NotSignedList"},"ZTDATE":"20191204","ZTSHOP":"GA","ZTLINE":"C1","ZTSHIFT":"B","ZTMNO":"906284883","ZTMNE":"Parrott, Faith","ZTKRNIN":"2019-12-04 02:30:00","SUCCESS":"S","ERR_MSG":""},{"__metadata":{"id":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","uri":"http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotSignedListSet(ZTDATE='20191204',ZTSHOP='GA',ZTLINE='C1',ZTSHIFT='B')","type":"Z_HALO_SRV.NotSignedList"},"ZTDATE":"20191204","ZTSHOP":"GA","ZTLINE":"C1","ZTSHIFT":"B","ZTMNO":"104491","ZTMNE":"Pritchett, Josh W","ZTKRNIN":"2019-12-04 06:28:00","SUCCESS":"S","ERR_MSG":""}]}}
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Headcount Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					HeadcountOverviewSet
+					<span>Headcount Set</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						HeadcountOverviewSet?$filter=ZTQDT eq '11012019' and ZTSHOP eq 'GA' and ZTSHIFT eq 'B'&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_D_HEADCOUNT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>Line</div>
+						</div>
+						<div class="key">
+							<div>ZTQDT</div>
+							<div>Date</div>
+						</div>
+						<div>
+							<div>ZTHMMATO</div>
+							<div>HMMA T/O(Plan)</div>
+						</div>
+						<div>
+							<div>ZTACCUNT</div>
+							<div>Actual Count</div>
+						</div>
+						<div>
+							<div>ZTSHORT</div>
+							<div>Short</div>
+						</div>
+						<div>
+							<div>ZTSHORT_R</div>
+							<div>Short M/P Ratio(%)</div>
+						</div>
+						<div>
+							<div>ZTTTABS</div>
+							<div>Absent count</div>
+						</div>
+						<div>
+							<div>ZTTTABS_R</div>
+							<div>Absent Ratio(%)</div>
+						</div>
+						<div>
+							<div>ZTTMCUNT</div>
+							<div>HMMAT/M Count</div>
+						</div>
+						<div>
+							<div>ZTTEMP</div>
+							<div>Temps Count</div>
+						</div>
+						<div>
+							<div>ZTSUBTOT</div>
+							<div>Sub-total</div>
+						</div>
+						<div>
+							<div>ZTTLCUNT</div>
+							<div>Team Leader Count</div>
+						</div>
+						<div>
+							<div>ZTFLTCUNT</div>
+							<div>Floater Count</div>
+						</div>
+						<div>
+							<div>ZTKEEPCUNT</div>
+							<div>Keeper</div>
+						</div>
+						<div>
+							<div>ZTHOURLY</div>
+							<div>Hourly</div>
+						</div>
+						<div>
+							<div>ZTSPERICAL</div>
+							<div>Specialist</div>
+						</div>
+						<div>
+							<div>ZTGL</div>
+							<div>GL</div>
+						</div>
+						<div>
+							<div>ZTAM</div>
+							<div>AM</div>
+						</div>
+						<div>
+							<div>ZTMGR</div>
+							<div>MGR</div>
+						</div>
+						<div>
+							<div>ZTHOD</div>
+							<div>HOD</div>
+						</div>
+						<div>
+							<div>ZTCOORDI</div>
+							<div>Coordinator</div>
+						</div>
+						<div>
+							<div>ZTSALARY</div>
+							<div>Salary</div>
+						</div>
+						<div>
+							<div>ZTTOT</div>
+							<div>Total</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"d" : {
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/HeadcountOverviewSet(ZTSHOP='',ZTSHIFT='',ZTQDT='')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/HeadcountOverviewSet(ZTSHOP='',ZTSHIFT='',ZTQDT='')",
+										"type" : "Z_HALO_SRV.HeadcountOverview"
+									},
+									"ZTSHOP" : "",
+									"ZTSHIFT" : "",
+									"ZTQDT" : "",
+									"ZTHMMATO" : "",
+									"ZTACCUNT" : "",
+									"ZTSHORT" : "",
+									"ZTSHORT_R" : "",
+									"ZTTTABS" : "",
+									"ZTTTABS_R" : "",
+									"ZTTMCUNT" : "",
+									"ZTTEMP" : "",
+									"ZTSUBTOT" : "",
+									"ZTTLCUNT" : "",
+									"ZTFLTCUNT" : "",
+									"ZTKEEPCUNT" : "",
+									"ZTHOURLY" : "",
+									"ZTSPERICAL" : "",
+									"ZTGL" : "",
+									"ZTAM" : "",
+									"ZTMGR" : "",
+									"ZTHOD" : "",
+									"ZTCOORDI" : "",
+									"ZTSALARY" : "",
+									"ZTTOT" : "",
+									"SUCCESS" : "S",
+									"ERR_MSG" : "No results"					
+								}
+							]
+						}
+					}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Absenteeism Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					AbsenteeismSet
+					<span>Absenteeism Set</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/AbsenteeismSet?$filter=FROMDT eq '11012019' and TODT eq '11022019' and ZTSHOP eq 'GA' and ZTSHIFT eq 'B'&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_D_ABSENT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div class="key">
+							<div>ZTDATE</div>
+							<div>Date</div>
+						</div>
+						<div>
+							<div>FROMDT</div>
+							<div>From Date</div>
+						</div>
+						<div>
+							<div>TODT</div>
+							<div>To Date</div>
+						</div>
+						<div>
+							<div>ZTSHIFT</div>
+							<div>SHIFT</div>
+						</div>
+						<div>
+							<div>ZTDAAV</div>
+							<div>Daily Average</div>
+						</div>
+						<div>
+							<div>ZTTOT</div>
+							<div>Total</div>
+						</div>
+						<div>
+							<div>ZTHMMATO</div>
+							<div>HMMA T/O</div>
+						</div>
+						<div>
+							<div>ZTTMCOU</div>
+							<div>HMMA TMs</div>
+						</div>
+						<div>
+							<div>ZTTEMPS</div>
+							<div>TEMPS</div>
+						</div>
+						<div>
+							<div>ZTSUBTOT</div>
+							<div>Subtotal</div>
+						</div>
+						<div>
+							<div>ZTTEMMAN</div>
+							<div>Temp Manning %</div>
+						</div>
+						<div>
+							<div>ZTKRATCD</div>
+							<div>Kronos Attendance Code</div>
+						</div>
+						<div>
+							<div>ZTATTNCOU</div>
+							<div>Absenteeism Count(average)</div>
+						</div>
+						<div>
+							<div>ZTUNSCHE</div>
+							<div>Un-Scheduled</div>
+						</div>
+						<div>
+							<div>ZTSCHEDUE</div>
+							<div>Scheduled</div>
+						</div>
+						<div>
+							<div>ZTTTABS</div>
+							<div>TOTAL Absent</div>
+						</div>
+						<div>
+							<div>ZTSHORT</div>
+							<div>% short</div>
+						</div>
+						<div>
+							<div>ZTABSENT</div>
+							<div>% Absent</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"d" : {
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/AbsenteeismSet(ZTSHOP='',ZTTEM='',ZTDATE='')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/AbsenteeismSet(ZTSHOP='',ZTTEM='',ZTDATE='')",
+										"type" : "Z_HALO_SRV.Absenteeism"
+									},
+									"FROMDT" : "",
+									"TODT" : "",
+									"ZTSHOP" : "",
+									"ZTSHIFT" : "",
+									"ZTTEM" : "",
+									"ZTDATE" : "",
+									"ZTDAAV" : "",
+									"ZTTOT" : "",
+									"ZTHMMATO" : "",
+									"ZTTMCOU" : "",
+									"ZTTEMPS" : "",
+									"ZTSUBTOT" : "",
+									"ZTTEMMAN" : "",
+									"ZTKRATCD" : "",
+									"ZTATTNCOU" : "",
+									"ZTUNSCHE" : "",
+									"ZTSCHEDUE" : "",
+									"ZTTTABS" : "",
+									"ZTSHORT" : "",
+									"ZTABSENT" : "",
+									"SUCCESS" : "S",
+									"ERR_MSG" : "No results"										
+								}
+							]
+						}
+					}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			History Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					HistorySet
+					<span>History Set</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/HistorySet?$filter=ZTDATE eq '11012019' and ZTSHOP eq 'GA' and ZTTEM eq 'T2A'&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_D_HISTORY</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div class="key">
+							<div>ZTDATE</div>
+							<div>Date</div>
+						</div>
+						<div class="key">
+							<div>ZTTIME</div>
+							<div>Time</div>
+						</div>
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div>
+							<div>SEQ_NO</div>
+							<div>DD+SEQ No.</div>
+						</div>
+						<div>
+							<div>ZTVIN</div>
+							<div>Vin #</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member (T/M) Name</div>
+						</div>
+						<div>
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div>
+							<div>ZTSHIFT</div>
+							<div>SHIFT</div>
+						</div>
+						<div>
+							<div>ZTCORROT</div>
+							<div>Correct Rotation</div>
+						</div>
+						<div>
+							<div>ZTCUTMLE</div>
+							<div>Current T/M Levels</div>
+						</div>
+						<div>
+							<div>ZTKEEPNM</div>
+							<div>Keeper</div>
+						</div>
+						<div>
+							<div>ZTKEEPER_ID</div>
+							<div>Keeper TM#</div>
+						</div>
+						<div>
+							<div>ZTTLNM</div>
+							<div>Team Leader</div>
+						</div>
+						<div>
+							<div>ZTTL_ID</div>
+							<div>Team Leader TM#</div>
+						</div>
+						<div>
+							<div>ZTGLNM</div>
+							<div>Group Leader</div>
+						</div>
+						<div>
+							<div>ZTGL_ID</div>
+							<div>Group Leader TM#</div>
+						</div>
+						<div>
+							<div>ZTSPEICAL_CODE</div>
+							<div>Special Sign in Code</div>
+						</div>
+						<div>
+							<div>ZTQAALT</div>
+							<div>Quality Alerts verified</div>
+						</div>
+						<div>
+							<div>ZTQAALT1</div>
+							<div>Quality Alerts verified</div>
+						</div>
+						<div>
+							<div>ZTQAALT2</div>
+							<div>Quality Alerts verified</div>
+						</div>
+						<div>
+							<div>ZTQAALT3</div>
+							<div>Quality Alerts verified</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"d" : {
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/HistorySet(ZTSHOP='',ZTSTAT='',ZTDATE='',ZTTIME='',ZTMNO='')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/HistorySet(ZTSHOP='',ZTSTAT='',ZTDATE='',ZTTIME='',ZTMNO='')",
+										"type" : "Z_HALO_SRV.History"
+									},
+									"ZTSHOP" : "",
+									"ZTSTAT" : "",
+									"ZTDATE" : "",
+									"ZTTIME" : "",
+									"ZTMNO" : "",
+									"SEQ_NO" : "",
+									"ZTVIN" : "",
+									"ZTMNE" : "",
+									"ZTTEM" : "",
+									"ZTLINE" : "",
+									"ZTSHIFT" : "",
+									"ZTCORROT" : "",
+									"ZTCUTMLE" : "",
+									"ZTKEEPNM" : "",
+									"ZTKEEPER_ID" : "",
+									"ZTTLNM" : "",
+									"ZTTL_ID" : "",
+									"ZTGLNM" : "",
+									"ZTGL_ID" : "",
+									"ZTSPEICAL_CODE" : "",
+									"ZTQAALT" : "",
+									"ZTQAALT1" : "",
+									"ZTQAALT2" : "",
+									"ZTQAALT3" : "",
+									"SUCCESS" : "S",
+									"ERR_MSG" : "No results"															
+								}
+							]
+						}
+					}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Rotation Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					SchedulePlanSet
+					<span>Schedule Rotation Plan</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/SchedulePlanSet?$filter=ZTSHOP eq 'GA' and ZTTEM eq 'T2C' and ZTDATE eq '11222019' and ZTORDER eq 'A' and ZTVER eq '2'&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_ROTATION</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDATE</div>
+							<div>Date</div>
+						</div>
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div>
+							<div>ZTORDER</div>
+							<div>Rotation Plan Order</div>
+						</div>
+						<div>
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div>
+							<div>ZTROLE</div>
+							<div>Role</div>
+						</div>
+						<div>
+							<div>ZTQT</div>
+							<div>Quarter</div>
+						</div>
+						<div>
+							<div>ZTLINE</div>
+							<div>Line</div>
+						</div>
+						<div>
+							<div>ZTERGOST</div>
+							<div>Ergo Station</div>
+						</div>
+						<div>
+							<div>ZTERGOST_VALUE</div>
+							<div>Ergo Station Value</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member Name</div>
+						</div>
+						<div>
+							<div>ZTBADG</div>
+							<div>Badge Number</div>
+						</div>
+						<div>
+							<div>ZTTEM_ORI</div>
+							<div>Original Team</div>
+						</div>
+						<div>
+							<div>ZTSHIFT</div>
+							<div>Shift</div>
+						</div>
+						<div>
+							<div>ZTADCD</div>
+							<div></div>
+						</div>
+						<div>
+							<div>ZTSTAU</div>
+							<div>Training Value for the Station</div>
+						</div>
+						<div>
+							<div>ZTHOURS</div>
+							<div>Hours of Work</div>
+						</div>
+						<div>
+							<div>ZTROVER</div>
+							<div>Version of Rotation Plan</div>
+						</div>
+						<div>
+							<div>ZTFLAG</div>
+							<div>Confirmed Version</div>
+						</div>
+						<div>
+							<div>ZTVER</div>
+							<div>Version, (4 or 5 quarter)</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"d" : {
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/SchedulePlanSet(ZTDATE='20191122',ZTSHOP='GA',ZTTEM='T2A',ZTMNO='101378')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/SchedulePlanSet(ZTDATE='20191122',ZTSHOP='GA',ZTTEM='T2A',ZTMNO='101378')",
+										"type" : "Z_HALO_SRV.SchedulePlan"
+									},
+									"ZTORDER" : "",
+									"ZTDATE" : "20191122",
+									"ZTSHOP" : "GA",
+									"ZTSTAT" : "T1-01L",
+									"ZTROLE" : "",
+									"ZTQT" : "1",
+									"ZTLINE" : "T1",
+									"ZTERGOST" : "",
+									"ZTERGOST_VALUE" : "00",
+									"ZTTEM" : "T2A",
+									"ZTMNO" : "101378",
+									"ZTMNE" : "Neal, David E",
+									"ZTBADG" : "00000000000201062967",
+									"ZTTEM_ORI" : "",
+									"ZTSHIFT" : "A",
+									"ZTADCD" : "",
+									"ZTSTAU" : "5",
+									"ZTHOURS" : "02",
+									"ZTROVER" : "00",
+									"ZTFLAG" : "",
+									"ZTVER" : "",
+									"SUCCESS" : "",
+									"ERR_MSG" : ""
+								}
+							]
+						}
+					}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/SchedulePlanSet<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_ROTATION</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDATE</div>
+							<div>Date</div>
+						</div>
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div>
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div>
+							<div>ZTROLE</div>
+							<div>Role</div>
+						</div>
+						<div>
+							<div>ZTQT</div>
+							<div>Quarter</div>
+						</div>
+						<div>
+							<div>ZTLINE</div>
+							<div>Line</div>
+						</div>
+						<div>
+							<div>ZTERGOST</div>
+							<div>Ergo Station</div>
+						</div>
+						<div>
+							<div>ZTERGOST_VALUE</div>
+							<div>Ergo Station Value</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member Name</div>
+						</div>
+						<div>
+							<div>ZTBADG</div>
+							<div>Badge Number</div>
+						</div>
+						<div>
+							<div>ZTTEM_ORI</div>
+							<div>Original Team</div>
+						</div>
+						<div>
+							<div>ZTSHIFT</div>
+							<div>Shift</div>
+						</div>
+						<div>
+							<div>ZTADCD</div>
+							<div></div>
+						</div>
+						<div>
+							<div>ZTSTAU</div>
+							<div>Training Value for the Station</div>
+						</div>
+						<div>
+							<div>ZTHOURS</div>
+							<div>Hours of Work</div>
+						</div>
+						<div>
+							<div>ZTROVER</div>
+							<div>Version of Rotation Plan</div>
+						</div>
+						<div>
+							<div>ZTFLAG</div>
+							<div>Confirmed Version</div>
+						</div>
+						<div>
+							<div>ZTVER</div>
+							<div>Version, (4 or 5 quarter)</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"ZTDATE" : "20191008",
+						"ZTSHOP" : "GA",
+						"ZTSTAT" : "F1-21L",
+						"ZTROLE" : "",
+						"ZTQT" : "1",
+						"ZTLINE" : "",
+						"ZTERGOST" : "",
+						"ZTERGOST_VALUE" : "00",
+						"ZTTEM" : "F2A",
+						"ZTMNO" : "0000104492",
+						"ZTMNE" : "ELIZABETH SAMPLEY",
+						"ZTBADG" : "",
+						"ZTTEM_ORI" : "",
+						"ZTSHIFT" : "",
+						"ZTADCD" : "",
+						"ZTSTAU" : "",
+						"ZTHOURS" : "02",
+						"ZTROVER" : "",
+						"ZTFLAG" : "X",
+						"SUCCESS" : "",
+						"ERR_MSG" : ""				
+					}
+					</div>
+				</div>
+			</div>
+			<div class="api">
+				<div class="name">
+					ScheduleActualSet
+					<span>Actual Rotation Plan</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/ScheduleActualSet?$filter=ZTDATE eq '11052019' and ZTSHOP eq 'GA' and ZTTEM eq 'T2A' and ZTROVER eq '01' and ZTFLAG eq ''&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_ROTATION</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDATE</div>
+							<div>Date</div>
+						</div>
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div class="key">
+							<div>ZTQT</div>
+							<div>Quarter</div>
+						</div>
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div class="key">
+							<div>ZTROVER</div>
+							<div>Version of Rotation Plan</div>
+						</div>
+						<div>
+							<div>ZTSUB</div>
+							<div>Sub-Station</div>
+						</div>
+						<div>
+							<div>ZTERGOST</div>
+							<div>Ergo Station</div>
+						</div>
+						<div>
+							<div>ZTERGOST_VALUE</div>
+							<div>Ergo Station Value</div>
+						</div>
+						<div>
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member Name</div>
+						</div>
+						<div>
+							<div>ZTBADG</div>
+							<div>Badge Number</div>
+						</div>
+						<div>
+							<div>ZTTEM_ORI</div>
+							<div>Original Team</div>
+						</div>
+						<div>
+							<div>ZTSTAU</div>
+							<div>Training Status Value</div>
+						</div>
+						<div>
+							<div>ZTHOURS</div>
+							<div>Hour of work</div>
+						</div>
+						<div>
+							<div>ZTROVER</div>
+							<div>Version of Rotation Plan</div>
+						</div>
+						<div>
+							<div>ZTFLAG</div>
+							<div>Confirmed Version</div>
+						</div>
+						<div>
+							<div>ZTMAXQTR</div>
+							<div>Max Quarter of Rotation Plan</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"d" : {
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/ScheduleActualSet(ZTDATE='20191105',ZTSHOP='GA',ZTSTAT='T1-01L',ZTQT='1',ZTMNO='101378',ZTROVER='01')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/ScheduleActualSet(ZTDATE='20191105',ZTSHOP='GA',ZTSTAT='T1-01L',ZTQT='1',ZTMNO='101378',ZTROVER='01')",
+										"type" : "Z_HALO_SRV.ScheduleActual"
+									},
+									"ZTDATE" : "20191105",
+									"ZTSHOP" : "GA",
+									"ZTSTAT" : "T1-01L",
+									"ZTSUB" : "",
+									"ZTQT" : "1",
+									"ZTERGOST" : "",
+									"ZTERGOST_VALUE" : "00",
+									"ZTTEM" : "T2A",
+									"ZTMNO" : "101378",
+									"ZTMNE" : "abcabc, abcabc",
+									"ZTROLE" : "",
+									"ZTBADG" : "00000000000201062967",
+									"ZTTEM_ORI" : "",
+									"ZTSTAU" : "",
+									"ZTHOURS" : "02",
+									"ZTROVER" : "01",
+									"ZTFLAG" : "",
+									"ZTMAXQTR" : "4",
+									"SUCCESS" : "",
+									"ERR_MSG" : ""																									
+								}
+							]
+						}
+					}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">PUT</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/ScheduleActualSet(ZTDATE='20191105',ZTSHOP='GA',ZTSTAT='T1-01L',ZTQT='1',ZTMNO='101879',ZTROVER='01')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_ROTATION</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDATE</div>
+							<div>Date</div>
+						</div>
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div class="key">
+							<div>ZTQT</div>
+							<div>Quarter</div>
+						</div>
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div class="key">
+							<div>ZTROVER</div>
+							<div>Version of Rotation Plan</div>
+						</div>
+						<div>
+							<div>ZTSUB</div>
+							<div>Sub-Station</div>
+						</div>
+						<div>
+							<div>ZTERGOST</div>
+							<div>Ergo Station</div>
+						</div>
+						<div>
+							<div>ZTERGOST_VALUE</div>
+							<div>Ergo Station Value</div>
+						</div>
+						<div>
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member Name</div>
+						</div>
+						<div>
+							<div>ZTBADG</div>
+							<div>Badge Number</div>
+						</div>
+						<div>
+							<div>ZTTEM_ORI</div>
+							<div>Original Team</div>
+						</div>
+						<div>
+							<div>ZTSTAU</div>
+							<div>Training Status Value</div>
+						</div>
+						<div>
+							<div>ZTHOURS</div>
+							<div>Hour of work</div>
+						</div>
+						<div>
+							<div>ZTROVER</div>
+							<div>Version of Rotation Plan</div>
+						</div>
+						<div>
+							<div>ZTFLAG</div>
+							<div>Confirmed Version</div>
+						</div>
+						<div>
+							<div>ZTMAXQTR</div>
+							<div>Max Quarter of Rotation Plan</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"ZTDATE" : "20191105",
+						"ZTSHOP" : "GA",
+						"ZTSTAT" : "T1-01L",
+						"ZTSUB" : "",
+						"ZTQT" : "1",
+						"ZTERGOST" : "",
+						"ZTERGOST_VALUE" : "00",
+						"ZTTEM" : "T2A",
+						"ZTMNO" : "101378",
+						"ZTMNE" : "abcabc, abcabc",
+						"ZTROLE" : "",
+						"ZTBADG" : "00000000000201062967",
+						"ZTTEM_ORI" : "",
+						"ZTSTAU" : "",
+						"ZTHOURS" : "02",
+						"ZTROVER" : "01",
+						"ZTFLAG" : "",
+						"ZTMAXQTR" : "4",
+						"SUCCESS" : "",
+						"ERR_MSG" : ""
+					}
+					</div>
+				</div>
+			</div>
+			<div class="api">
+				<div class="name">
+					GetPlanVersionSet
+					<span>Get Version of Rotation Plan</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/GetPlanVersionSet?$filter=ZTDATE eq '11052019' and ZTSHOP eq 'GA' and ZTTEM eq 'T2A'&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_ROTATION</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDATE</div>
+							<div>Date</div>
+						</div>
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTROVER</div>
+							<div>Version of Rotation Plan</div>
+						</div>
+						<div>
+							<div>ZTFLAG</div>
+							<div>Confirmed Version Flag</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"d" : {
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetPlanVersionSet(ZTDATE='20191008',ZTSHOP='GA',ZTTEM='F2A')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetPlanVersionSet(ZTDATE='20191008',ZTSHOP='GA',ZTTEM='F2A')",
+										"type" : "Z_HALO_SRV.GetPlanVersion"
+									},
+									"ZTDATE" : "20191008",
+									"ZTSHOP" : "GA",
+									"ZTTEM" : "F2A",
+									"ZTROVER" : "01",
+									"ZTFLAG" : "",
+									"SUCCESS" : "",
+									"ERR_MSG" : ""																														
+								}
+							]
+						}
+					}
+					</div>
+				</div>
+			</div>
+			<div class="api">
+				<div class="name">
+					WorkerScheduleSet
+					<span>Get Worker Schedule of Rotation Plan</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/WorkerScheduleSet?$filter=ZTSHOP eq 'GA' and ZTTEM eq 'F2A' and ZTDATE eq '10082019' and ZTROVER eq '1' and ZTFLAG eq ''&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_ROTATION</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDATE</div>
+							<div>Date</div>
+						</div>
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div>
+							<div>ZTROLE</div>
+							<div>Role</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member Name</div>
+						</div>
+						<div>
+							<div>ZTBADG</div>
+							<div>Badge Number</div>
+						</div>
+						<div>
+							<div>ZTROVER</div>
+							<div>Rotation Plan Version</div>
+						</div>
+						<div>
+							<div>ZTQT1STAT</div>
+							<div>Quarter1 Station</div>
+						</div>
+						<div>
+							<div>ZTQT2STAT</div>
+							<div>Quarter2 Station</div>
+						</div>
+						<div>
+							<div>ZTQT3STAT</div>
+							<div>Quarter3 Station</div>
+						</div>
+						<div>
+							<div>ZTQT4STAT</div>
+							<div>Quarter4 Station</div>
+						</div>
+						<div>
+							<div>ZTQT5STAT</div>
+							<div>Quarter5 Station</div>
+						</div>
+						<div>
+							<div>ZTHOURS</div>
+							<div>Work Hour</div>
+						</div>
+						<div>
+							<div>ZTFLAG</div>
+							<div>Confirmed Version</div>
+						</div>
+						<div>
+							<div>ZTMAXQTR</div>
+							<div>Max Quarter of the Rotation Plan</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"d" : {
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/WorkerScheduleSet(ZTDATE='20191114',ZTSHOP='GA',ZTTEM='T2A',ZTMNO='101378')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/WorkerScheduleSet(ZTDATE='20191114',ZTSHOP='GA',ZTTEM='T2A',ZTMNO='101378')",
+										"type" : "Z_HALO_SRV.WorkerSchedule"
+									},
+									"ZTDATE" : "20191114",
+									"ZTSHOP" : "GA",
+									"ZTTEM" : "T2A",
+									"ZTMNO" : "101378",
+									"ZTROLE" : "",
+									"ZTMNE" : "Neal, David E",
+									"ZTBADG" : "00000000000201062967",
+									"ZTROVER" : "01",
+									"ZTQT1STAT" : "",
+									"ZTQT2STAT" : "",
+									"ZTQT3STAT" : "T1-01L",
+									"ZTQT4STAT" : "T1-04R",
+									"ZTQT5STAT" : "",
+									"ZTHOURS" : "04",
+									"ZTFLAG" : "",
+									"ZTMAXQTR" : "4",
+									"SUCCESS" : "",
+									"ERR_MSG" : ""																																			
+								}
+							]
+						}
+					}
+					</div>
+				</div>
+			</div>
+			<div class="api">
+				<div class="name">
+					NotAssignSet
+					<span>Not Assigned Worker of Rotation Plan</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/NotAssignSet?$filter=ZTDATE eq '11142019' and ZTSHOP eq 'GA' and ZTQT eq '' and ZTTEM eq 'T2A' and ZTROVER eq '01'&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_ROTATION</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDATE</div>
+							<div>Date</div>
+						</div>
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div class="key">
+							<div>ZTQT</div>
+							<div>Quarter</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member Name</div>
+						</div>
+						<div>
+							<div>ZTBADG</div>
+							<div>Badge Number</div>
+						</div>
+						<div>
+							<div>ZTHOURS</div>
+							<div>Work Hours</div>
+						</div>
+						<div>
+							<div>ZTROVER</div>
+							<div>Version of Rotation Plan</div>
+						</div>
+						<div>
+							<div>ZTMAXQTR</div>
+							<div>Max Quarter of Rotation Plan</div>
+						</div>
+						<div>
+							<div>ZTROLE</div>
+							<div>Role</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"d" : {
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotAssignSet(ZTDATE='20191114',ZTSHOP='GA',ZTQT='1',ZTTEM='T2A')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NotAssignSet(ZTDATE='20191114',ZTSHOP='GA',ZTQT='1',ZTTEM='T2A')",
+										"type" : "Z_HALO_SRV.NotAssign"
+									},
+									"ZTDATE" : "20191114",
+									"ZTSHOP" : "GA",
+									"ZTQT" : "1",
+									"ZTTEM" : "T2A",
+									"ZTMNO" : "101378",
+									"ZTMNE" : "Neal, David E",
+									"ZTBADG" : "00000000000201062967",
+									"ZTHOURS" : "02",
+									"ZTROVER" : "01",
+									"ZTMAXQTR" : "4",
+									"ZTROLE" : "",
+									"SUCCESS" : "",
+									"ERR_MSG" : ""																																								
+								}
+							]
+						}
+					}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Training Matrix Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					TrainMatSet
+					<span>Training Matrix Set</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/TrainMatSet?$filter=ZTSHOP eq 'GA' and ZTTEM eq 'T2A' and ZTSTAT eq '' and ZTMNO eq ''&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_TRAIN_MAT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member (T/M) Name</div>
+						</div>
+						<div>
+							<div>ZTADCD</div>
+							<div>Time Admin Code</div>
+						</div>
+						<div>
+							<div>ZTSTAU</div>
+							<div>Training Status</div>
+						</div>
+						<div>
+							<div>ZTSKPM</div>
+							<div>SKILL - Paint Mixer</div>
+						</div>
+						<div>
+							<div>ZTSKPA</div>
+							<div>SKILL - Pads</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"d": {
+								"results": [
+									{
+										"__metadata": {
+											"id": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/TrainMatSet(ZTSHOP='GA',ZTTEM='C1A',ZTSTAT='%5B%7B%22ZTSTAT%22%3A%22C1-01L%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-01R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-05R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-06R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-07L%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-09R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-10L%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-10R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-12L%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-12R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-15L%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-15R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-17R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C2-03L%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C2-04R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%5D',ZTMNO='906857617')",
+											"uri": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/TrainMatSet(ZTSHOP='GA',ZTTEM='C1A',ZTSTAT='%5B%7B%22ZTSTAT%22%3A%22C1-01L%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-01R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-05R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-06R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-07L%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-09R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-10L%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-10R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-12L%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-12R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-15L%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-15R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C1-17R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C2-03L%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%2C%7B%22ZTSTAT%22%3A%22C2-04R%22%2C%22ZTSTAU%22%3A%22%22%2C%22ZTSKPM%22%3A%22%22%2C%22ZTSKPA%22%3A%22%22%7D%5D',ZTMNO='906857617')",
+											"type": "Z_HALO_SRV.TrainMat"
+										},
+										"ZTSHOP": "GA",
+										"ZTTEM": "C1A",
+										"ZTSTAT": "[{\"ZTSTAT\":\"C1-01L\",\"ZTSTAU\":\"\",\"ZTSKPM\":\"\",\"ZTSKPA\":\"\"},{\"ZTSTAT\":\"C1-01R\",\"ZTSTAU\":\"\",\"ZTSKPM\":\"\",\"ZTSKPA\":\"\"},{\"ZTSTAT\":\"C1-05R\",\"ZTSTAU\":\"\",\"ZTSKPM\":\"\",\"ZTSKPA\":\"\"},{\"ZTSTAT\":\"C1-06R\",\"ZTSTAU\":\"\",\"ZTSKPM\":\"\",\"ZTSKPA\":\"\"},{\"ZTSTAT\":\"C1-07L\",\"ZTSTAU\":\"\",\"ZTSKPM\":\"\",\"ZTSKPA\":\"\"},{\"ZTSTAT\":\"C1-09R\",\"ZTSTAU\":\"\",\"ZTSKPM\":\"\",\"ZTSKPA\":\"\"},{\"ZTSTAT\":\"C1-10L\",\"ZTSTAU\":\"\",\"ZTSKPM\":\"\",\"ZTSKPA\":\"\"},{\"ZTSTAT\":\"C1-10R\",\"ZTSTAU\":\"\",\"ZTSKPM\":\"\",\"ZTSKPA\":\"\"},{\"ZTSTAT\":\"C1-12L\",\"ZTSTAU\":\"\",\"ZTSKPM\":\"\",\"ZTSKPA\":\"\"},{\"ZTSTAT\":\"C1-12R\",\"ZTSTAU\":\"\",\"ZTSKPM\":\"\",\"ZTSKPA\":\"\"},{\"ZTSTAT\":\"C1-15L\",\"ZTSTAU\":\"\",\"ZTSKPM\":\"\",\"ZTSKPA\":\"\"},{\"ZTSTAT\":\"C1-15R\",\"ZTSTAU\":\"\",\"ZTSKPM\":\"\",\"ZTSKPA\":\"\"},{\"ZTSTAT\":\"C1-17R\",\"ZTSTAU\":\"\",\"ZTSKPM\":\"\",\"ZTSKPA\":\"\"},{\"ZTSTAT\":\"C2-03L\",\"ZTSTAU\":\"\",\"ZTSKPM\":\"\",\"ZTSKPA\":\"\"},{\"ZTSTAT\":\"C2-04R\",\"ZTSTAU\":\"\",\"ZTSKPM\":\"\",\"ZTSKPA\":\"\"}]",
+										"ZTSHIFT": "",
+										"ZTMNO": "906857617",
+										"ZTMNE": "Jackson, Tremonte",
+										"ZTADCD": "",
+										"ZTSTAU": "",
+										"ZTSKPM": "",
+										"ZTSKPA": "",
+										"ZTOMIT": "",
+										"SUCCESS": "",
+										"ERR_MSG": ""
+									}
+								]
+							}
+						}
+					</div>
+				</div>		
+				<div class="spec-group">
+					<div class="method spec">PUT</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/TrainMatSet(ZTSHOP='GA',ZTTEM='T2A',ZTSTAT='T1-01L',ZTMNO='102614')?$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_TRAIN_MAT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member (T/M) Name</div>
+						</div>
+						<div>
+							<div>ZTADCD</div>
+							<div>Time Admin Code</div>
+						</div>
+						<div>
+							<div>ZTSTAU</div>
+							<div>Training Status</div>
+						</div>
+						<div>
+							<div>ZTSKPM</div>
+							<div>SKILL - Paint Mixer</div>
+						</div>
+						<div>
+							<div>ZTSKPA</div>
+							<div>SKILL - Pads</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"ZTSHOP" : "GA",
+						"ZTTEM" : "T2A",
+						"ZTSTAT" : "T1-01L",
+						"ZTSHIFT" : "",
+						"ZTMNO" : "102614",
+						"ZTMNE" : "CRIPPLE, EDWARD",
+						"ZTADCD" : "T2A",
+						"ZTSTAU" : "5",
+						"ZTSKPM" : "",
+						"ZTSKPA" : "",
+						"ZTOMIT" : "",
+						"SUCCESS" : "",
+						"ERR_MSG" : ""
+					}
+					</div>
+				</div>		
+			</div>
+			<div class="api">
+				<div class="name">
+					GetTrainStatusSet
+					<span>Training Status Set</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/GetTrainStatusSet?$filter=ZTSHOP eq 'GA' and ZTTEM eq '' and ZTSTAT eq 'T1-01L' and ZTMNO eq '101378'&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_TRAIN_MAT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member (T/M) Name</div>
+						</div>
+						<div>
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTADCD</div>
+							<div>Time Admin Code</div>
+						</div>
+						<div>
+							<div>ZTSTAU</div>
+							<div>Training Status</div>
+						</div>
+						<div>
+							<div>ZTSKPM</div>
+							<div>SKILL - Paint Mixer</div>
+						</div>
+						<div>
+							<div>ZTSKPA</div>
+							<div>SKILL - Pads</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"d" : {
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetTrainStatusSet(ZTSHOP='GA',ZTTEM='T2A',ZTSTAT='T1-01L',ZTMNO='101378')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetTrainStatusSet(ZTSHOP='GA',ZTTEM='T2A',ZTSTAT='T1-01L',ZTMNO='101378')",
+										"type" : "Z_HALO_SRV.GetTrainStatus"
+									},
+									"ZTSHOP" : "GA",
+									"ZTTEM" : "T2A",
+									"ZTSTAT" : "T1-01L",
+									"ZTSHIFT" : "",
+									"ZTMNO" : "101378",
+									"ZTMNE" : "NEAL, DAVID",
+									"ZTADCD" : "T2A",
+									"ZTSTAU" : "5",
+									"ZTSKPM" : "",
+									"ZTSKPA" : "",
+									"ZTOMIT" : "",
+									"SUCCESS" : "",
+									"ERR_MSG" : ""															
+								}
+							]
+						}
+					}
+					</div>
+				</div>		
+			</div>
+			<div class="api">
+				<div class="name">
+					GetSkillLevelSet
+					<span>Skill Level Set</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/GetSkillLevelSet?$filter=ZTSHOP eq 'GA' and ZTSTAT eq '' and ZTMNO eq '102235'&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_TRAIN_MAT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member (T/M) Name</div>
+						</div>
+						<div>
+							<div>ZTSTAU</div>
+							<div>Training Status Value</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"d" : {
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetSkillLevelSet(ZTSHOP='GA',ZTTEM='T6A',ZTSTAT='KEEPER',ZTMNO='102235')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetSkillLevelSet(ZTSHOP='GA',ZTTEM='T6A',ZTSTAT='KEEPER',ZTMNO='102235')",
+										"type" : "Z_HALO_SRV.GetSkillLevel"
+									},
+									"ZTSHOP" : "GA",
+									"ZTTEM" : "T6A",
+									"ZTSTAT" : "KEEPER",
+									"ZTMNO" : "102235",
+									"ZTMNE" : "Shelton, Mary K",
+									"ZTSTAU" : "5",
+									"SUCCESS" : "",
+									"ERR_MSG" : ""																				
+								}
+							]
+						}
+					}
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Team Member Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					TMInfoSet
+					<span>Team Member Information</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/TMInfoSet?$filter=ZTSHOP eq 'GA' and ZTLINE eq '' and ZTADCD eq 'T2A' and ZTSHIFT eq '' and ZTROLE eq '' and ZTTEMP eq ''and ZTOMIT eq '' &$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_TMMEMER</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member (T/M) Name</div>
+						</div>
+						<div>
+							<div>ZTBADG</div>
+							<div>T/M Badge ID</div>
+						</div>
+						<div>
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div>
+							<div>ZTDTCC</div>
+							<div>Department Code Cost Center</div>
+						</div>
+						<div>
+							<div>ZTDTNA</div>
+							<div>Department Name (Time Admin Code)</div>
+						</div>
+						<div>
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTADCD</div>
+							<div>Time Admin Code</div>
+						</div>
+						<div>
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div>
+							<div>ZTSHIFT</div>
+							<div>SHIFT</div>
+						</div>
+						<div>
+							<div>ZTROLE</div>
+							<div>ROLE</div>
+						</div>
+						<div>
+							<div>ZTTEMP</div>
+							<div>Temp Company</div>
+						</div>
+						<div>
+							<div>ZTLOACV</div>
+							<div>Person assigned to LOA  coverage</div>
+						</div>
+						<div>
+							<div>ZTSTDT</div>
+							<div>Start Date</div>
+						</div>
+						<div>
+							<div>ZTEDDT</div>
+							<div>End Date</div>
+						</div>
+						<div>
+							<div>ZTACT</div>
+							<div>Active / Inactive</div>
+						</div>
+						<div>
+							<div>ZTLOSDT</div>
+							<div>When did LOA Start</div>
+						</div>
+						<div>
+							<div>ZTSPSP</div>
+							<div>Special project support Person</div>
+						</div>
+						<div>
+							<div>ZTLOADT</div>
+							<div>Days on LOA</div>
+						</div>
+						<div>
+							<div>ZTDILFT</div>
+							<div>Discussion Plan Lifetime Total Qty</div>
+						</div>
+						<div>
+							<div>ZTDISCU</div>
+							<div>Discussion Plan Current Quantity</div>
+						</div>
+						<div>
+							<div>ZTPERF</div>
+							<div>Performance Issue level</div>
+						</div>
+						<div>
+							<div>ZTATTN</div>
+							<div>Attendance Issue level</div>
+						</div>
+						<div>
+							<div>ZTVARE</div>
+							<div># VACATION DAYS Remaining</div>
+						</div>
+						<div>
+							<div>ZTPERE</div>
+							<div># PERSONAL DAYS Remaining</div>
+						</div>
+						<div>
+							<div>ZTVATS</div>
+							<div># VACATION DAYS Total at start of year</div>
+						</div>
+						<div>
+							<div>ZTPETS</div>
+							<div># PERSONAL DAYS Total at start of year</div>
+						</div>
+						<div>
+							<div>ZTMAIL</div>
+							<div>EMAIL or Radio contact information</div>
+						</div>
+						<div>
+							<div>ZTOMIT</div>
+							<div>Omit Inactive</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"d" : {
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/TMInfoSet('100486')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/TMInfoSet('100486')",
+										"type" : "Z_HALO_SRV.TMInfo"
+									},
+									"ZTMNO" : "100486",
+									"ZTMNE" : "Broadhead, Mark E",
+									"ZTBADG" : "20100869            ",
+									"ZTSHOP" : "GA",
+									"ZTDTCC" : "MXTX53",
+									"ZTDTNA" : "P9A",
+									"ZTLINE" : "PDI",
+									"ZTTEM" : "P9A",
+									"ZTSHIFT" : "A",
+									"ZTROLE" : "",
+									"ZTTEMP" : "H2011010",
+									"ZTLOACV" : "",
+									"ZTSTDT" : "",
+									"ZTEDDT" : "",
+									"ZTACT" : "ACTIVE",
+									"ZTLOSDT" : "",
+									"ZTSPSP" : "",
+									"ZTLOADT" : "000",
+									"ZTDILFT" : "0000000000",
+									"ZTDISCU" : "0000000000",
+									"ZTPERF" : "1",
+									"ZTATTN" : "1",
+									"ZTVARE" : "000",
+									"ZTPERE" : "000",
+									"ZTVATS" : "000",
+									"ZTPETS" : "000",
+									"ZTMAIL" : "",
+									"ZTOMIT" : "",
+									"SUCCESS" : "",
+									"ERR_MSG" : ""					
+								}
+							]
+						}
+					}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">PUT</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/TMInfoSet(ZTMNO='101378')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_TMMEMER</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member (T/M) Name</div>
+						</div>
+						<div>
+							<div>ZTBADG</div>
+							<div>T/M Badge ID</div>
+						</div>
+						<div>
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div>
+							<div>ZTDTCC</div>
+							<div>Department Code Cost Center</div>
+						</div>
+						<div>
+							<div>ZTDTNA</div>
+							<div>Department Name (Time Admin Code)</div>
+						</div>
+						<div>
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTADCD</div>
+							<div>Time Admin Code</div>
+						</div>
+						<div>
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div>
+							<div>ZTSHIFT</div>
+							<div>SHIFT</div>
+						</div>
+						<div>
+							<div>ZTROLE</div>
+							<div>ROLE</div>
+						</div>
+						<div>
+							<div>ZTTEMP</div>
+							<div>Temp Company</div>
+						</div>
+						<div>
+							<div>ZTLOACV</div>
+							<div>Person assigned to LOA  coverage</div>
+						</div>
+						<div>
+							<div>ZTSTDT</div>
+							<div>Start Date</div>
+						</div>
+						<div>
+							<div>ZTEDDT</div>
+							<div>End Date</div>
+						</div>
+						<div>
+							<div>ZTACT</div>
+							<div>Active / Inactive</div>
+						</div>
+						<div>
+							<div>ZTLOSDT</div>
+							<div>When did LOA Start</div>
+						</div>
+						<div>
+							<div>ZTSPSP</div>
+							<div>Special project support Person</div>
+						</div>
+						<div>
+							<div>ZTLOADT</div>
+							<div>Days on LOA</div>
+						</div>
+						<div>
+							<div>ZTDILFT</div>
+							<div>Discussion Plan Lifetime Total Qty</div>
+						</div>
+						<div>
+							<div>ZTDISCU</div>
+							<div>Discussion Plan Current Quantity</div>
+						</div>
+						<div>
+							<div>ZTPERF</div>
+							<div>Performance Issue level</div>
+						</div>
+						<div>
+							<div>ZTATTN</div>
+							<div>Attendance Issue level</div>
+						</div>
+						<div>
+							<div>ZTVARE</div>
+							<div># VACATION DAYS Remaining</div>
+						</div>
+						<div>
+							<div>ZTPERE</div>
+							<div># PERSONAL DAYS Remaining</div>
+						</div>
+						<div>
+							<div>ZTVATS</div>
+							<div># VACATION DAYS Total at start of year</div>
+						</div>
+						<div>
+							<div>ZTPETS</div>
+							<div># PERSONAL DAYS Total at start of year</div>
+						</div>
+						<div>
+							<div>ZTMAIL</div>
+							<div>EMAIL or Radio contact information</div>
+						</div>
+						<div>
+							<div>ZTOMIT</div>
+							<div>Omit Inactive</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"ZTMNO" : "101378",
+						"ZTMNE" : "Neal, David E",
+						"ZTBADG" : "00000000000201062967",
+						"ZTSHOP" : "GA",
+						"ZTDTCC" : "MXTX11",
+						"ZTDTNA" : "T2A",
+						"ZTLINE" : "T1",
+						"ZTTEM" : "T2A",
+						"ZTSHIFT" : "A",
+						"ZTROLE" : "",
+						"ZTTEMP" : "H2011010",
+						"ZTLOACV" : "",
+						"ZTSTDT" : "00000000",
+						"ZTEDDT" : "00000000",
+						"ZTACT" : "ACTIVE",
+						"ZTLOSDT" : "00000000",
+						"ZTSPSP" : "",
+						"ZTLOADT" : "000",
+						"ZTDILFT" : "0000000000",
+						"ZTDISCU" : "0000000000",
+						"ZTPERF" : "1",
+						"ZTATTN" : "1",
+						"ZTVARE" : "000",
+						"ZTPERE" : "000",
+						"ZTVATS" : "000",
+						"ZTPETS" : "000",
+						"ZTMAIL" : "",
+						"ZTOMIT" : "",
+						"SUCCESS" : "",
+						"ERR_MSG" : ""				
+					}
+					</div>
+				</div>		
+			</div>
+			<div class="api">
+				<div class="name">
+					AddMemberSet
+					<span>Add Member</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/AddMemberSet?$filter=ZTDATE eq '11052019' and ZTSHOP eq 'GA' and ZTSHIFT eq 'A' and ZTBADG eq '20100504'&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_TMMEMER</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDATE</div>
+							<div>Date</div>
+						</div>
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div class="key">
+							<div>ZTBADG</div>
+							<div>Badge Number</div>
+						</div>
+						<div>
+							<div>ZTSHIFT</div>
+							<div>Shift</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member Name</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"d" : {
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/AddMemberSet(ZTDATE='20191105',ZTSHOP='GA',ZTTEM='C1A',ZTMNO='102063',ZTBADG='00000000000020100504')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/AddMemberSet(ZTDATE='20191105',ZTSHOP='GA',ZTTEM='C1A',ZTMNO='102063',ZTBADG='00000000000020100504')",
+										"type" : "Z_HALO_SRV.AddMember"
+									},
+									"ZTDATE" : "20191105",
+									"ZTSHOP" : "GA",
+									"ZTTEM" : "C1A",
+									"ZTSHIFT" : "A",
+									"ZTMNO" : "102063",
+									"ZTBADG" : "00000000000020100504",
+									"ZTMNE" : "THORNHILL, ROBERT",
+									"SUCCESS" : "",
+									"ERR_MSG" : ""					
+								}
+							]
+						}
+					}
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Team Member List Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					TMListSet
+					<span>Team Member List</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/TMListSet?$filter=ZTSHIFT eq '' and ZTTEM eq 'T2A'&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_TMLIST</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div>
+							<div>ZTFUNA</div>
+							<div>Full Name</div>
+						</div>
+						<div>
+							<div>ZTLANA</div>
+							<div>Last Name</div>
+						</div>
+						<div>
+							<div>ZTFINA</div>
+							<div>First Name</div>
+						</div>
+						<div>
+							<div>ZTBADG</div>
+							<div>T/M Badge ID</div>
+						</div>
+						<div>
+							<div>ZTTMID</div>
+							<div>TM ID</div>
+						</div>
+						<div>
+							<div>ZTHIDT</div>
+							<div>Hire Date</div>
+						</div>
+						<div>
+							<div>ZTAREA</div>
+							<div>Area</div>
+						</div>
+						<div>
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTSHIFT</div>
+							<div>SHIFT</div>
+						</div>
+						<div>
+							<div>ZTLOADT</div>
+							<div>Days on LOA</div>
+						</div>
+						<div>
+							<div>ZTLODTS</div>
+							<div>LOA Days</div>
+						</div>
+						<div>
+							<div>ZTCMVAL</div>
+							<div>COMMON VALUE</div>
+						</div>
+						<div>
+							<div>ZTNOTE</div>
+							<div>NOTE/COMMENT</div>
+						</div>
+						<div>
+							<div>ZTLOATM</div>
+							<div>LOA TM</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{ 
+						"d" : { 
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/TMListSet('101378')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/TMListSet('101378')",
+										"type" : "Z_HALO_SRV.TMList"
+									},
+									"ZTMNO" : "101378",
+									"ZTFUNA" : " DAVID,NEAL",
+									"ZTLANA" : " DAVID",
+									"ZTFINA" : "NEAL",
+									"ZTBADG" : "00000000000201062967",
+									"ZTTMID" : "",
+									"ZTHIDT" : "20050104",
+									"ZTAREA" : "TRIM",
+									"ZTTEM" : "T2A",
+									"ZTSHIFT" : "A-SHIF",
+									"ZTLOADT" : "000",
+									"ZTLODTS" : "000",
+									"ZTCMVAL" : "",
+									"ZTNOTE" : "",
+									"ZTLOATM" : "",
+									"SUCCESS" : "",
+									"ERR_MSG" : ""					
+								}
+							]
+						} 
+					} 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Attendance Actual Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					AttendanceActualSet
+					<span>Attendance Actual List</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/AttendanceActualSet?$filter=ZTEVDT eq '10282019' and ZTSHOP eq 'GA' and ZTTEM eq '' and ZTLINE eq '' and ZTSHIFT eq '' and ZTOMIT eq ''&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_ATTEN_ACT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTEVDT</div>
+							<div>Event Date</div>
+						</div>
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div class="key">
+							<div>ZTMNE</div>
+							<div>Team Member (T/M) Name</div>
+						</div>
+						<div>
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div>
+							<div>ZTROLE</div>
+							<div>ROLE</div>
+						</div>
+						<div>
+							<div>ZTADCD</div>
+							<div>Time Admin Code</div>
+						</div>
+						<div>
+							<div>ZTDEPT</div>
+							<div>Department</div>
+						</div>
+						<div>
+							<div>ZTSHIFT</div>
+							<div>SHIFT</div>
+						</div>
+						<div>
+							<div>ZTLOADT</div>
+							<div>LOA Days</div>
+						</div>
+						<div>
+							<div>ZTSHDTS</div>
+							<div>Consecutive No Call-No Show Days</div>
+						</div>
+						<div>
+							<div>ZTMISDT</div>
+							<div>Missing Days</div>
+						</div>
+						<div>
+							<div>ZTGTIN</div>
+							<div>Gate In Time</div>
+						</div>
+						<div>
+							<div>ZTKRNIN</div>
+							<div>Kronos Clock In Time</div>
+						</div>
+						<div>
+							<div>ZTSISTA</div>
+							<div>Signed in to a Station</div>
+						</div>
+						<div>
+							<div>ZTKRNOT</div>
+							<div>Kronos Clock Out Time</div>
+						</div>
+						<div>
+							<div>ZTGTOT</div>
+							<div>Gate Out Time</div>
+						</div>
+						<div>
+							<div>ZTDICO</div>
+							<div>DISPLAY CODE</div>
+						</div>
+						<div>
+							<div>ZTINFURD</div>
+							<div>IN FUNCT AREA ID</div>
+						</div>
+						<div>
+							<div>ZTOUFURD</div>
+							<div>OUT FUNCT AREA ID</div>
+						</div>
+						<div>
+							<div>ZTOMIT</div>
+							<div>Omit Inactive</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"d" : { 
+								"results" : [
+									{
+										"__metadata" : {
+											"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/AttendanceActualSet(ZTEVDT='20191028',ZTSHOP='GA',ZTTEM='AER-Weld',ZTMNO='906763027')",
+											"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/AttendanceActualSet(ZTEVDT='20191028',ZTSHOP='GA',ZTTEM='AER-Weld',ZTMNO='906763027')",
+											"type" : "Z_HALO_SRV.AttendanceActual"
+										},
+										"ZTEVDT" : "20191028",
+										"ZTSHOP" : "GA",
+										"ZTTEM" : "AER-Weld",
+										"ZTMNO" : "906763027",
+										"ZTMNE" : "Hogan, Nathan",
+										"ZTLINE" : "C2",
+										"ZTROLE" : "",
+										"ZTDEPT" : "",
+										"ZTSHIFT" : "B",
+										"ZTLOADT" : "000",
+										"ZTSHDTS" : "000",
+										"ZTMISDT" : "",
+										"ZTGTIN" : "",
+										"ZTKRNIN" : "2019-10-28 22:24:00",
+										"ZTSISTA" : "",
+										"ZTKRNOT" : "2019-10-29 06:45:00",
+										"ZTGTOT" : "",
+										"ZTDICO" : "",
+										"ZTINFURD" : "",
+										"ZTOUFURD" : "",
+										"ZTOMIT" : "",
+										"SUCCESS" : "",
+										"ERR_MSG" : ""					
+									}
+								]
+							} 
+						}
+					</div>
+				</div>
+			</div>
+			<div class="api">
+				<div class="name">
+					StationSetupSet
+					<span>Station Setup List</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/StationSetupSet?$filter=ZTSHOP eq 'GA' and ZTTEM eq 'T2A'&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_ATTEN_ACT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTERGOST</div>
+							<div>Ergo Station</div>
+						</div>
+						<div>
+							<div>ZTERGOST_VALUE</div>
+							<div>Ergo Value</div>
+						</div>
+						<div>
+							<div>ZTQACT</div>
+							<div>Active / Inactive</div>
+						</div>
+						<div>
+							<div>ZTDTCC</div>
+							<div>Department Code Cost Center</div>
+						</div>
+						<div>
+							<div>ZTDTNA</div>
+							<div>Department Name (Time Admin Code)</div>
+						</div>
+						<div>
+							<div>ZTTEMNL</div>
+							<div>TERMINAL</div>
+						</div>
+						<div>
+							<div>ZTROPER</div>
+							<div>ROTATION PERIOD (IN HOURS)</div>
+						</div>
+						<div>
+							<div>ZTUNDBO</div>
+							<div>Underbody Job</div>
+						</div>
+						<div>
+							<div>ZTIQISID</div>
+							<div>IQIS ID</div>
+						</div>
+						<div>
+							<div>ZTTMSVID</div>
+							<div>GMES TM Server ID</div>
+						</div>
+						<div>
+							<div>ZTSTTL</div>
+							<div>T/L Station</div>
+						</div>
+						<div>
+							<div>ZTSTGL</div>
+							<div>G/L Station</div>
+						</div>
+						<div>
+							<div>ZTSTFL</div>
+							<div>Floater Station</div>
+						</div>
+						<div>
+							<div>ZTSTKP</div>
+							<div>Keeper Station</div>
+						</div>
+						<div>
+							<div>ZTTMRL</div>
+							<div>Team Relations</div>
+						</div>
+						<div>
+							<div>ZTSTMN</div>
+							<div>Maintenance</div>
+						</div>
+						<div>
+							<div>ZTPAQY</div>
+							<div>Part Quality</div>
+						</div>
+						<div>
+							<div>ZTWLRP</div>
+							<div>Weld Repair</div>
+						</div>
+						<div>
+							<div>ZTELRP</div>
+							<div>Electrical Repair</div>
+						</div>
+						<div>
+							<div>ZTEITR</div>
+							<div>E/I Trainer</div>
+						</div>
+						<div>
+							<div>ZTPRCO</div>
+							<div>Production Control</div>
+						</div>
+						<div>
+							<div>ZTSAFE</div>
+							<div>Safety</div>
+						</div>
+						<div>
+							<div>ZTVHINA1</div>
+							<div>VEHICLE 1 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS1</div>
+							<div>VEHICLE 1 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA2</div>
+							<div>VEHICLE 2 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS2</div>
+							<div>VEHICLE 2 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA3</div>
+							<div>VEHICLE 3 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS3</div>
+							<div>VEHICLE 3 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA4</div>
+							<div>VEHICLE 4 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS4</div>
+							<div>VEHICLE 4 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA5</div>
+							<div>VEHICLE 5 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS5</div>
+							<div>VEHICLE 5 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA6</div>
+							<div>VEHICLE 6 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS6</div>
+							<div>VEHICLE 6 SWIS LINK</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{ 
+						"d" : { 
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/StationSetupSet(ZTSHOP='GA',ZTLINE='C1',ZTSTAT='C1-01L',ZTTEM='C1A')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/StationSetupSet(ZTSHOP='GA',ZTLINE='C1',ZTSTAT='C1-01L',ZTTEM='C1A')",
+										"type" : "Z_HALO_SRV.StationSetup"
+									},
+									"ZTSHOP" : "GA",
+									"ZTLINE" : "C1",
+									"ZTSTAT" : "C1-01L",
+									"ZTTEM" : "C1A",
+									"ZTERGOST" : "",
+									"ZTERGOST_VALUE" : "00",
+									"ZTQACT" : "ACTIVE",
+									"ZTDTCC" : "",
+									"ZTDTNA" : "",
+									"ZTTEMNL" : "00",
+									"ZTROPER" : "00",
+									"ZTUNDBO" : "",
+									"ZTIQISID" : "",
+									"ZTTMSVID" : "",
+									"ZTSTTL" : "",
+									"ZTSTGL" : "",
+									"ZTSTFL" : "",
+									"ZTSTKP" : "",
+									"ZTTMRL" : "",
+									"ZTSTMN" : "",
+									"ZTPAQY" : "",
+									"ZTWLRP" : "",
+									"ZTELRP" : "",
+									"ZTEITR" : "",
+									"ZTPRCO" : "",
+									"ZTSAFE" : "",
+									"ZTVHINA1" : "",
+									"ZTVHSWIS1" : "",
+									"ZTVHINA2" : "",
+									"ZTVHSWIS2" : "",
+									"ZTVHINA3" : "",
+									"ZTVHSWIS3" : "",
+									"ZTVHINA4" : "",
+									"ZTVHSWIS4" : "",
+									"ZTVHINA5" : "",
+									"ZTVHSWIS5" : "",
+									"ZTVHINA6" : "",
+									"ZTVHSWIS6" : "",
+									"SUCCESS" : "",
+									"ERR_MSG" : ""									
+								}
+							]
+						} 
+					} 
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/StationSetupSet<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_ATTEN_ACT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTERGOST</div>
+							<div>Ergo Station</div>
+						</div>
+						<div>
+							<div>ZTERGOST_VALUE</div>
+							<div>Ergo Value</div>
+						</div>
+						<div>
+							<div>ZTQACT</div>
+							<div>Active / Inactive</div>
+						</div>
+						<div>
+							<div>ZTDTCC</div>
+							<div>Department Code Cost Center</div>
+						</div>
+						<div>
+							<div>ZTDTNA</div>
+							<div>Department Name (Time Admin Code)</div>
+						</div>
+						<div>
+							<div>ZTTEMNL</div>
+							<div>TERMINAL</div>
+						</div>
+						<div>
+							<div>ZTROPER</div>
+							<div>ROTATION PERIOD (IN HOURS)</div>
+						</div>
+						<div>
+							<div>ZTUNDBO</div>
+							<div>Underbody Job</div>
+						</div>
+						<div>
+							<div>ZTIQISID</div>
+							<div>IQIS ID</div>
+						</div>
+						<div>
+							<div>ZTTMSVID</div>
+							<div>GMES TM Server ID</div>
+						</div>
+						<div>
+							<div>ZTSTTL</div>
+							<div>T/L Station</div>
+						</div>
+						<div>
+							<div>ZTSTGL</div>
+							<div>G/L Station</div>
+						</div>
+						<div>
+							<div>ZTSTFL</div>
+							<div>Floater Station</div>
+						</div>
+						<div>
+							<div>ZTSTKP</div>
+							<div>Keeper Station</div>
+						</div>
+						<div>
+							<div>ZTTMRL</div>
+							<div>Team Relations</div>
+						</div>
+						<div>
+							<div>ZTSTMN</div>
+							<div>Maintenance</div>
+						</div>
+						<div>
+							<div>ZTPAQY</div>
+							<div>Part Quality</div>
+						</div>
+						<div>
+							<div>ZTWLRP</div>
+							<div>Weld Repair</div>
+						</div>
+						<div>
+							<div>ZTELRP</div>
+							<div>Electrical Repair</div>
+						</div>
+						<div>
+							<div>ZTEITR</div>
+							<div>E/I Trainer</div>
+						</div>
+						<div>
+							<div>ZTPRCO</div>
+							<div>Production Control</div>
+						</div>
+						<div>
+							<div>ZTSAFE</div>
+							<div>Safety</div>
+						</div>
+						<div>
+							<div>ZTVHINA1</div>
+							<div>VEHICLE 1 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS1</div>
+							<div>VEHICLE 1 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA2</div>
+							<div>VEHICLE 2 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS2</div>
+							<div>VEHICLE 2 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA3</div>
+							<div>VEHICLE 3 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS3</div>
+							<div>VEHICLE 3 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA4</div>
+							<div>VEHICLE 4 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS4</div>
+							<div>VEHICLE 4 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA5</div>
+							<div>VEHICLE 5 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS5</div>
+							<div>VEHICLE 5 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA6</div>
+							<div>VEHICLE 6 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS6</div>
+							<div>VEHICLE 6 SWIS LINK</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{ 
+						"ZTSHOP" : "GA",
+						"ZTLINE" : "C1",
+						"ZTSTAT" : "C1-01L",
+						"ZTTEM" : "C1A",
+						"ZTERGOST" : "",
+						"ZTERGOST_VALUE" : "00",
+						"ZTQACT" : "ACTIVE",
+						"ZTDTCC" : "",
+						"ZTDTNA" : "",
+						"ZTTEMNL" : "00",
+						"ZTROPER" : "00",
+						"ZTUNDBO" : "",
+						"ZTIQISID" : "",
+						"ZTTMSVID" : "",
+						"ZTSTTL" : "",
+						"ZTSTGL" : "",
+						"ZTSTFL" : "",
+						"ZTSTKP" : "",
+						"ZTTMRL" : "",
+						"ZTSTMN" : "",
+						"ZTPAQY" : "",
+						"ZTWLRP" : "",
+						"ZTELRP" : "",
+						"ZTEITR" : "",
+						"ZTPRCO" : "",
+						"ZTSAFE" : "",
+						"ZTVHINA1" : "",
+						"ZTVHSWIS1" : "",
+						"ZTVHINA2" : "",
+						"ZTVHSWIS2" : "",
+						"ZTVHINA3" : "",
+						"ZTVHSWIS3" : "",
+						"ZTVHINA4" : "",
+						"ZTVHSWIS4" : "",
+						"ZTVHINA5" : "",
+						"ZTVHSWIS5" : "",
+						"ZTVHINA6" : "",
+						"ZTVHSWIS6" : ""				
+					} 
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">PUT</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/StationSetupSet(ZTSHOP='GA',ZTLINE='C999',ZTSTAT='C1-01L',ZTTEM='C1A')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_ATTEN_ACT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTERGOST</div>
+							<div>Ergo Station</div>
+						</div>
+						<div>
+							<div>ZTERGOST_VALUE</div>
+							<div>Ergo Value</div>
+						</div>
+						<div>
+							<div>ZTQACT</div>
+							<div>Active / Inactive</div>
+						</div>
+						<div>
+							<div>ZTDTCC</div>
+							<div>Department Code Cost Center</div>
+						</div>
+						<div>
+							<div>ZTDTNA</div>
+							<div>Department Name (Time Admin Code)</div>
+						</div>
+						<div>
+							<div>ZTTEMNL</div>
+							<div>TERMINAL</div>
+						</div>
+						<div>
+							<div>ZTROPER</div>
+							<div>ROTATION PERIOD (IN HOURS)</div>
+						</div>
+						<div>
+							<div>ZTUNDBO</div>
+							<div>Underbody Job</div>
+						</div>
+						<div>
+							<div>ZTIQISID</div>
+							<div>IQIS ID</div>
+						</div>
+						<div>
+							<div>ZTTMSVID</div>
+							<div>GMES TM Server ID</div>
+						</div>
+						<div>
+							<div>ZTSTTL</div>
+							<div>T/L Station</div>
+						</div>
+						<div>
+							<div>ZTSTGL</div>
+							<div>G/L Station</div>
+						</div>
+						<div>
+							<div>ZTSTFL</div>
+							<div>Floater Station</div>
+						</div>
+						<div>
+							<div>ZTSTKP</div>
+							<div>Keeper Station</div>
+						</div>
+						<div>
+							<div>ZTTMRL</div>
+							<div>Team Relations</div>
+						</div>
+						<div>
+							<div>ZTSTMN</div>
+							<div>Maintenance</div>
+						</div>
+						<div>
+							<div>ZTPAQY</div>
+							<div>Part Quality</div>
+						</div>
+						<div>
+							<div>ZTWLRP</div>
+							<div>Weld Repair</div>
+						</div>
+						<div>
+							<div>ZTELRP</div>
+							<div>Electrical Repair</div>
+						</div>
+						<div>
+							<div>ZTEITR</div>
+							<div>E/I Trainer</div>
+						</div>
+						<div>
+							<div>ZTPRCO</div>
+							<div>Production Control</div>
+						</div>
+						<div>
+							<div>ZTSAFE</div>
+							<div>Safety</div>
+						</div>
+						<div>
+							<div>ZTVHINA1</div>
+							<div>VEHICLE 1 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS1</div>
+							<div>VEHICLE 1 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA2</div>
+							<div>VEHICLE 2 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS2</div>
+							<div>VEHICLE 2 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA3</div>
+							<div>VEHICLE 3 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS3</div>
+							<div>VEHICLE 3 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA4</div>
+							<div>VEHICLE 4 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS4</div>
+							<div>VEHICLE 4 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA5</div>
+							<div>VEHICLE 5 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS5</div>
+							<div>VEHICLE 5 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA6</div>
+							<div>VEHICLE 6 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS6</div>
+							<div>VEHICLE 6 SWIS LINK</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{ 
+						"ZTSHOP" : "GA",
+						"ZTLINE" : "C999",
+						"ZTSTAT" : "C1-01L",
+						"ZTTEM" : "C1A",
+						"ZTERGOST" : "",
+						"ZTERGOST_VALUE" : "00",
+						"ZTQACT" : "INACTIVE",
+						"ZTDTCC" : "",
+						"ZTDTNA" : "",
+						"ZTTEMNL" : "00",
+						"ZTROPER" : "00",
+						"ZTUNDBO" : "",
+						"ZTIQISID" : "",
+						"ZTTMSVID" : "",
+						"ZTSTTL" : "",
+						"ZTSTGL" : "",
+						"ZTSTFL" : "",
+						"ZTSTKP" : "",
+						"ZTTMRL" : "",
+						"ZTSTMN" : "",
+						"ZTPAQY" : "",
+						"ZTWLRP" : "",
+						"ZTELRP" : "",
+						"ZTEITR" : "",
+						"ZTPRCO" : "",
+						"ZTSAFE" : "",
+						"ZTVHINA1" : "",
+						"ZTVHSWIS1" : "",
+						"ZTVHINA2" : "",
+						"ZTVHSWIS2" : "",
+						"ZTVHINA3" : "",
+						"ZTVHSWIS3" : "",
+						"ZTVHINA4" : "",
+						"ZTVHSWIS4" : "",
+						"ZTVHINA5" : "",
+						"ZTVHSWIS5" : "",
+						"ZTVHINA6" : "",
+						"ZTVHSWIS6" : ""							
+					} 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Attendance Plan Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					AttendancePlanSet
+					<span>Attendance Plan List</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/AttendancePlanSet?$filter=ZTFROMDT eq '11122019' and ZTTODT eq '11152019' and ZTSHOP eq 'GA' and ZTTEM eq 'T2A' and ZTLINE eq '' and ZTSHIFT eq '' and ZTOMIT eq ''&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_ATTEN_PLAN</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDATE</div>
+							<div>Vacation Date</div>
+						</div>
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member (T/M) Name</div>
+						</div>
+						<div>
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div>
+							<div>ZTSHIFT</div>
+							<div>SHIFT</div>
+						</div>
+						<div>
+							<div>ZTDICO</div>
+							<div>DISPLAY CODE</div>
+						</div>
+						<div>
+							<div>ZTDICO1</div>
+							<div>DISPLAY CODE1</div>
+						</div>
+						<div>
+							<div>ZTKRNCD</div>
+							<div>Kornos Code</div>
+						</div>
+						<div>
+							<div>ZTDESC</div>
+							<div>Desciption</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{ 
+						"d" : { 
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/AttendancePlanSet(ZTDATE='20191112',ZTSHOP='GA',ZTTEM='T2A',ZTMNO='101378')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/AttendancePlanSet(ZTDATE='20191112',ZTSHOP='GA',ZTTEM='T2A',ZTMNO='101378')",
+										"type" : "Z_HALO_SRV.AttendancePlan"
+									},
+									"ZTFROMDT" : "",
+									"ZTTODT" : "",
+									"ZTDATE" : "20191112",
+									"ZTSHOP" : "GA",
+									"ZTTEM" : "T2A",
+									"ZTMNO" : "101378",
+									"ZTMNE" : "NEAL, DAVID",
+									"ZTLINE" : "T1",
+									"ZTSHIFT" : "A",
+									"ZTDICO" : "",
+									"ZTDICO1" : "",
+									"ZTKRNCD" : "0   ",
+									"ZTDESC" : "",
+									"ZTOMIT" : "",
+									"ZTCODE" : "",
+									"ZTCOUNT" : "",
+									"ZTTOTAL" : "",
+									"ZTSORT" : "1 ",
+									"SUCCESS" : "",
+									"ERR_MSG" : ""
+								}
+							]
+						} 
+					} 
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">PUT</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/AttendancePlanSet(ZTDATE='11122019',ZTSHOP='GA',ZTTEM='T2A',ZTMNO='101378')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_ATTEN_PLAN</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDATE</div>
+							<div>Vacation Date</div>
+						</div>
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member (T/M) Name</div>
+						</div>
+						<div>
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div>
+							<div>ZTSHIFT</div>
+							<div>SHIFT</div>
+						</div>
+						<div>
+							<div>ZTDICO</div>
+							<div>DISPLAY CODE</div>
+						</div>
+						<div>
+							<div>ZTDICO1</div>
+							<div>DISPLAY CODE1</div>
+						</div>
+						<div>
+							<div>ZTKRNCD</div>
+							<div>Kornos Code</div>
+						</div>
+						<div>
+							<div>ZTDESC</div>
+							<div>Desciption</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{ 
+						"d" : { 
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/AttendancePlanSet(ZTDATE='20191112',ZTSHOP='GA',ZTTEM='T2A',ZTMNO='101378')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/AttendancePlanSet(ZTDATE='20191112',ZTSHOP='GA',ZTTEM='T2A',ZTMNO='101378')",
+										"type" : "Z_HALO_SRV.AttendancePlan"
+									},
+									"ZTFROMDT" : "",
+									"ZTTODT" : "",
+									"ZTDATE" : "20191112",
+									"ZTSHOP" : "GA",
+									"ZTTEM" : "T2A",
+									"ZTMNO" : "101378",
+									"ZTMNE" : "NEAL, DAVID",
+									"ZTLINE" : "T1",
+									"ZTSHIFT" : "A",
+									"ZTDICO" : "",
+									"ZTDICO1" : "",
+									"ZTKRNCD" : "0   ",
+									"ZTDESC" : "",
+									"ZTOMIT" : "",
+									"ZTCODE" : "",
+									"ZTCOUNT" : "",
+									"ZTTOTAL" : "",
+									"ZTSORT" : "1 ",
+									"SUCCESS" : "",
+									"ERR_MSG" : ""
+								}
+							]
+						} 
+					} 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Quality Alert Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					QualityAlertsSet
+					<span>Quality Alert List</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/QualityAlertsSet?$filter=ZTQSTDT eq '11012019' and ZTQEDDT eq '11022019' and ZTSHOP eq 'GA'&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_QA_ALERT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTQALNA</div>
+							<div>Quality Alert Name</div>
+						</div>
+						<div>
+							<div>ZTQALFNA</div>
+							<div>Alert File Name</div>
+						</div>
+						<div>
+							<div>ZTLINE</div>
+							<div>Line</div>
+						</div>
+						<div>
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div>
+							<div>ZTQACT</div>
+							<div>Active</div>
+						</div>
+						<div>
+							<div>ZTQTRAN</div>
+							<div>Requires T/M Quality Training</div>
+						</div>
+						<div>
+							<div>ZTQSTDT</div>
+							<div>Start to display</div>
+						</div>
+						<div>
+							<div>ZTQEDDT</div>
+							<div>End display</div>
+						</div>
+						<div>
+							<div>ZTQVIEW</div>
+							<div>View Details</div>
+						</div>
+						<div>
+							<div>ZTQINNA</div>
+							<div>Input by</div>
+						</div>
+						<div>
+							<div>ZTQCRDT</div>
+							<div>Created</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{ 
+						"d" : { 
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/QualityAlertsSet(ZTSHOP='',ZTQALNA='')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/QualityAlertsSet(ZTSHOP='',ZTQALNA='')",
+										"type" : "Z_HALO_SRV.QualityAlerts"
+									},
+									"ZTSHOP" : "",
+									"ZTQALNA" : "",
+									"ZTQALFNA" : "",
+									"ZTLINE" : "",
+									"ZTSTAT" : "",
+									"ZTQACT" : "",
+									"ZTQTRAN" : "",
+									"ZTQSTDT" : "",
+									"ZTQEDDT" : "",
+									"ZTQVIEW" : "",
+									"ZTQINNA" : "",
+									"ZTQCRDT" : "",
+									"SUCCESS" : "S",
+									"ERR_MSG" : "No results"					
+								}
+							]
+						} 
+					} 
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/QualityAlertsSet<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_QA_ALERT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTQALNA</div>
+							<div>Quality Alert Name</div>
+						</div>
+						<div>
+							<div>ZTQALFNA</div>
+							<div>Alert File Name</div>
+						</div>
+						<div>
+							<div>ZTLINE</div>
+							<div>Line</div>
+						</div>
+						<div>
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div>
+							<div>ZTQACT</div>
+							<div>Active</div>
+						</div>
+						<div>
+							<div>ZTQTRAN</div>
+							<div>Requires T/M Quality Training</div>
+						</div>
+						<div>
+							<div>ZTQSTDT</div>
+							<div>Start to display</div>
+						</div>
+						<div>
+							<div>ZTQEDDT</div>
+							<div>End display</div>
+						</div>
+						<div>
+							<div>ZTQVIEW</div>
+							<div>View Details</div>
+						</div>
+						<div>
+							<div>ZTQINNA</div>
+							<div>Input by</div>
+						</div>
+						<div>
+							<div>ZTQCRDT</div>
+							<div>Created</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"ZTSHOP" : "GA",
+						"ZTQALNA" : "GA Softball tournament",
+						"ZTQALFNA" : "GA Softball tournament.ppt",
+						"ZTLINE" : "T2",
+						"ZTSTAT" : "",
+						"ZTQACT" : "Yes",
+						"ZTQTRAN" : "",
+						"ZTQSTDT" : "20191101",
+						"ZTQEDDT" : "20191120",
+						"ZTQVIEW" : "",
+						"ZTQINNA" : "Joel Johnston",
+						"ZTQCRDT" : "11012019"	
+					}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">PUT</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/QualityAlertsSet(ZTSHOP='GA',ZTQALNA='GA Softball tournament')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_QA_ALERT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTQALNA</div>
+							<div>Quality Alert Name</div>
+						</div>
+						<div>
+							<div>ZTQALFNA</div>
+							<div>Alert File Name</div>
+						</div>
+						<div>
+							<div>ZTLINE</div>
+							<div>Line</div>
+						</div>
+						<div>
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div>
+							<div>ZTQACT</div>
+							<div>Active</div>
+						</div>
+						<div>
+							<div>ZTQTRAN</div>
+							<div>Requires T/M Quality Training</div>
+						</div>
+						<div>
+							<div>ZTQSTDT</div>
+							<div>Start to display</div>
+						</div>
+						<div>
+							<div>ZTQEDDT</div>
+							<div>End display</div>
+						</div>
+						<div>
+							<div>ZTQVIEW</div>
+							<div>View Details</div>
+						</div>
+						<div>
+							<div>ZTQINNA</div>
+							<div>Input by</div>
+						</div>
+						<div>
+							<div>ZTQCRDT</div>
+							<div>Created</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"ZTSHOP" : "GA",
+						"ZTQALNA" : "GA Softball tournament",
+						"ZTQALFNA" : "GA Softball tournament.ppt",
+						"ZTLINE" : "T2",
+						"ZTSTAT" : "",
+						"ZTQACT" : "Yes",
+						"ZTQTRAN" : "",
+						"ZTQSTDT" : "20191201",
+						"ZTQEDDT" : "20191220",
+						"ZTQVIEW" : "",
+						"ZTQINNA" : "Joel Johnston",
+						"ZTQCRDT" : "11012019"
+					}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">DELETE</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/QualityAlertsSet(ZTSHOP='GA',ZTQALNA='GA Softball tournament')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_QA_ALERT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTQALNA</div>
+							<div>Quality Alert Name</div>
+						</div>
+						<div>
+							<div>ZTQALFNA</div>
+							<div>Alert File Name</div>
+						</div>
+						<div>
+							<div>ZTLINE</div>
+							<div>Line</div>
+						</div>
+						<div>
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div>
+							<div>ZTQACT</div>
+							<div>Active</div>
+						</div>
+						<div>
+							<div>ZTQTRAN</div>
+							<div>Requires T/M Quality Training</div>
+						</div>
+						<div>
+							<div>ZTQSTDT</div>
+							<div>Start to display</div>
+						</div>
+						<div>
+							<div>ZTQEDDT</div>
+							<div>End display</div>
+						</div>
+						<div>
+							<div>ZTQVIEW</div>
+							<div>View Details</div>
+						</div>
+						<div>
+							<div>ZTQINNA</div>
+							<div>Input by</div>
+						</div>
+						<div>
+							<div>ZTQCRDT</div>
+							<div>Created</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Notice Alert Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					NoticeAlertSet
+					<span>Notice Alert Log</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/NoticeAlertSet?$filter=ZTDATE eq '' and ZTSHOP eq 'GA' and ZTSTAT eq '' and ZTBADG eq ''&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_NOTICE</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDATE</div>
+							<div>Date</div>
+						</div>
+						<div class="key">
+							<div>ZTTIME</div>
+							<div>Time</div>
+						</div>
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div class="key">
+							<div>ZTBADG</div>
+							<div>Badge Number</div>
+						</div>
+						<div>
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div>
+							<div>ZTCOMMON</div>
+							<div>COMMON CODE</div>
+						</div>
+						<div>
+							<div>ZTCMVAL</div>
+							<div>COMMON VALUE</div>
+						</div>
+						<div>
+							<div>ZTFLAG</div>
+							<div>Confirm Y/N(Yes : "X")</div>
+						</div>
+						<div>
+							<div>ZTCONTIME</div>
+							<div>Confirm time</div>
+						</div>
+						<div>
+							<div>ZTCONID</div>
+							<div>Confirm Badge ID</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{ 
+						"d" : { 
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NoticeAlertSet(ZTDATE='',ZTTIME='',ZTSHOP='',ZTSTAT='', ZTBADG='')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/NoticeAlertSet(ZTDATE='',ZTTIME='',ZTSHOP='',ZTSTAT='', ZTBADG='')",
+										"type" : "Z_HALO_SRV.NoticeAlert"
+									},
+									"ZTDATE" : "",
+									"ZTTIME" : "",
+									"ZTSHOP" : "",
+									"ZTSTAT" : "",
+									"ZTMNO" : "",
+									"ZTBADG" : "",
+									"ZTCOMMON" : "",
+									"ZTCMVAL" : "",
+									"ZTFLAG" : "",
+									"ZTCONTIME" : "",
+									"ZTCONID" : "",
+									"SUCCESS" : "S",
+									"ERR_MSG" : "No results"										
+								}
+							]
+						} 
+					} 
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/NoticeAlertSet<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_NOTICE</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDATE</div>
+							<div>Date</div>
+						</div>
+						<div class="key">
+							<div>ZTTIME</div>
+							<div>Time</div>
+						</div>
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div class="key">
+							<div>ZTBADG</div>
+							<div>Badge Number</div>
+						</div>
+						<div>
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div>
+							<div>ZTCOMMON</div>
+							<div>COMMON CODE</div>
+						</div>
+						<div>
+							<div>ZTCMVAL</div>
+							<div>COMMON VALUE</div>
+						</div>
+						<div>
+							<div>ZTFLAG</div>
+							<div>Confirm Y/N(Yes : "X")</div>
+						</div>
+						<div>
+							<div>ZTCONTIME</div>
+							<div>Confirm time</div>
+						</div>
+						<div>
+							<div>ZTCONID</div>
+							<div>Confirm Badge ID</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{ 
+						"ZTDATE" : "11112019",
+						"ZTTIME" : "125002",
+						"ZTSHOP" : "GA",
+						"ZTSTAT" : "T1-01R",
+						"ZTMNO" : "",
+						"ZTBADG" : "00000000000201062967",
+						"ZTCOMMON" : "CM01",
+						"ZTCMVAL" : "C004",
+						"ZTFLAG" : "",
+						"ZTCONTIME" : "000000",
+						"ZTCONID" : ""
+					} 
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">PUT</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/NoticeAlertSet(ZTDATE='11112019',ZTTIME='125002',ZTSHOP='GA',ZTSTAT='T1-01R',ZTBADG='201062967')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_NOTICE</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDATE</div>
+							<div>Date</div>
+						</div>
+						<div class="key">
+							<div>ZTTIME</div>
+							<div>Time</div>
+						</div>
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div class="key">
+							<div>ZTBADG</div>
+							<div>Badge Number</div>
+						</div>
+						<div>
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div>
+							<div>ZTCOMMON</div>
+							<div>COMMON CODE</div>
+						</div>
+						<div>
+							<div>ZTCMVAL</div>
+							<div>COMMON VALUE</div>
+						</div>
+						<div>
+							<div>ZTFLAG</div>
+							<div>Confirm Y/N(Yes : "X")</div>
+						</div>
+						<div>
+							<div>ZTCONTIME</div>
+							<div>Confirm time</div>
+						</div>
+						<div>
+							<div>ZTCONID</div>
+							<div>Confirm Badge ID</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{ 
+						"ZTDATE" : "20191111",
+						"ZTTIME" : "125002",
+						"ZTSHOP" : "GA",
+						"ZTSTAT" : "T1-01R",
+						"ZTMNO" : "101378",
+						"ZTBADG" : "00000000000201062967",
+						"ZTCOMMON" : "CM01",
+						"ZTCMVAL" : "C004",
+						"ZTFLAG" : "X",
+						"ZTCONTIME" : "131745",
+						"ZTCONID" : "123456"
+					}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Discussion Plan Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					DiscussionPlanSet
+					<span>Discussion Plan List</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/DiscussionPlanSet&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_DISCUSSION</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div class="key">
+							<div>ZTDPTOT</div>
+							<div>Lifetime Total Discussion Plan Quantity</div>
+						</div>
+						<div>
+							<div>ZTSDATE</div>
+							<div>Start Date</div>
+						</div>
+						<div>
+							<div>ZTEDATE</div>
+							<div>End Date</div>
+						</div>
+						<div>
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div>
+							<div>ZTLINE</div>
+							<div>Line</div>
+						</div>
+						<div>
+							<div>ZTSHIFT</div>
+							<div>Shift</div>
+						</div>
+						<div>
+							<div>ZTACT</div>
+							<div>Active</div>
+						</div>
+						<div>
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTISDT</div>
+							<div>Date of Issue</div>
+						</div>
+						<div>
+							<div>ZTDIDT</div>
+							<div>Date of Discussion</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member Name</div>
+						</div>
+						<div>
+							<div>ZTDPCODE</div>
+							<div>Discussion Plan Code</div>
+						</div>
+						<div>
+							<div>ZTDPCODE_DESC</div>
+							<div>Discussion Plan Description</div>
+						</div>
+						<div>
+							<div>ZTCURDPTOT</div>
+							<div>Current Discussion Plan Total</div>
+						</div>
+						<div>
+							<div>ZTBAKIN</div>
+							<div></div>
+						</div>
+						<div>
+							<div>ZTLEVEL</div>
+							<div>Current Phase Level</div>
+						</div>
+						<div>
+							<div>ZTSUNA</div>
+							<div></div>
+						</div>
+						<div>
+							<div>ZTDISSM</div>
+							<div></div>
+						</div>
+						<div>
+							<div>ZTSPAC</div>
+							<div></div>
+						</div>
+						<div>
+							<div>ZTPERRE</div>
+							<div></div>
+						</div>
+						<div>
+							<div>ZTFOPE</div>
+							<div>Follow Up Performed</div>
+						</div>
+						<div>
+							<div>ZTFODT</div>
+							<div>Follow Up Date</div>
+						</div>
+						<div>
+							<div>ZTREPORT</div>
+							<div>Full Report</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{ 
+						"d" : { 
+							"__metadata": {
+							"id": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/DiscussionPlanSet(ZTMNO='',ZTDPTOT='')",
+							"uri": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/DiscussionPlanSet(ZTMNO='',ZTDPTOT='')",
+							"type": "Z_HALO_SRV.DiscussionPlan"
+							},
+							"ZTSDATE": "",
+							"ZTEDATE": "",
+							"ZTMNO": "",
+							"ZTDPTOT": "",
+							"ZTSHOP": "",
+							"ZTLINE": "",
+							"ZTSHIFT": "",
+							"ZTACT": "",
+							"ZTTEM": "",
+							"ZTISDT": "",
+							"ZTDIDT": "",
+							"ZTMNE": "",
+							"ZTDPCODE": "",
+							"ZTDPCODE_DESC": "",
+							"ZTCURDPTOT": "",
+							"ZTBAKIN": "",
+							"ZTLEVEL": "",
+							"ZTSUNA": "",
+							"ZTDISSM": "",
+							"ZTSPAC": "",
+							"ZTPERRE": "",
+							"ZTFOPE": "",
+							"ZTFODT": "",
+							"ZTREPORT": "",
+							"SUCCESS": "S",
+							"ERR_MSG": "No results"
+						} 
+					} 
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/DiscussionPlanSet&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_DISCUSSION</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div class="key">
+							<div>ZTDPTOT</div>
+							<div>Lifetime Total Discussion Plan Quantity</div>
+						</div>
+						<div>
+							<div>ZTSDATE</div>
+							<div>Start Date</div>
+						</div>
+						<div>
+							<div>ZTEDATE</div>
+							<div>End Date</div>
+						</div>
+						<div>
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div>
+							<div>ZTLINE</div>
+							<div>Line</div>
+						</div>
+						<div>
+							<div>ZTSHIFT</div>
+							<div>Shift</div>
+						</div>
+						<div>
+							<div>ZTACT</div>
+							<div>Active</div>
+						</div>
+						<div>
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTISDT</div>
+							<div>Date of Issue</div>
+						</div>
+						<div>
+							<div>ZTDIDT</div>
+							<div>Date of Discussion</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member Name</div>
+						</div>
+						<div>
+							<div>ZTDPCODE</div>
+							<div>Discussion Plan Code</div>
+						</div>
+						<div>
+							<div>ZTDPCODE_DESC</div>
+							<div>Discussion Plan Description</div>
+						</div>
+						<div>
+							<div>ZTCURDPTOT</div>
+							<div>Current Discussion Plan Total</div>
+						</div>
+						<div>
+							<div>ZTBAKIN</div>
+							<div></div>
+						</div>
+						<div>
+							<div>ZTLEVEL</div>
+							<div>Current Phase Level</div>
+						</div>
+						<div>
+							<div>ZTSUNA</div>
+							<div></div>
+						</div>
+						<div>
+							<div>ZTDISSM</div>
+							<div></div>
+						</div>
+						<div>
+							<div>ZTSPAC</div>
+							<div></div>
+						</div>
+						<div>
+							<div>ZTPERRE</div>
+							<div></div>
+						</div>
+						<div>
+							<div>ZTFOPE</div>
+							<div>Follow Up Performed</div>
+						</div>
+						<div>
+							<div>ZTFODT</div>
+							<div>Follow Up Date</div>
+						</div>
+						<div>
+							<div>ZTREPORT</div>
+							<div>Full Report</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{ 
+						"ZTSDATE": "",
+						"ZTEDATE": "",
+						"ZTMNO": "",
+						"ZTDPTOT": "",
+						"ZTSHOP": "",
+						"ZTLINE": "",
+						"ZTSHIFT": "",
+						"ZTACT": "",
+						"ZTTEM": "",
+						"ZTISDT": "",
+						"ZTDIDT": "",
+						"ZTMNE": "",
+						"ZTDPCODE": "",
+						"ZTDPCODE_DESC": "",
+						"ZTCURDPTOT": "",
+						"ZTBAKIN": "",
+						"ZTLEVEL": "",
+						"ZTSUNA": "",
+						"ZTDISSM": "",
+						"ZTSPAC": "",
+						"ZTPERRE": "",
+						"ZTFOPE": "",
+						"ZTFODT": "",
+						"ZTREPORT": ""
+					} 
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">PUT</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/DiscussionPlanSet(ZTMNO='999999',ZTDPTOT='1')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_DISCUSSION</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTMNO</div>
+							<div>Team Member Number</div>
+						</div>
+						<div class="key">
+							<div>ZTDPTOT</div>
+							<div>Lifetime Total Discussion Plan Quantity</div>
+						</div>
+						<div>
+							<div>ZTSDATE</div>
+							<div>Start Date</div>
+						</div>
+						<div>
+							<div>ZTEDATE</div>
+							<div>End Date</div>
+						</div>
+						<div>
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div>
+							<div>ZTLINE</div>
+							<div>Line</div>
+						</div>
+						<div>
+							<div>ZTSHIFT</div>
+							<div>Shift</div>
+						</div>
+						<div>
+							<div>ZTACT</div>
+							<div>Active</div>
+						</div>
+						<div>
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTISDT</div>
+							<div>Date of Issue</div>
+						</div>
+						<div>
+							<div>ZTDIDT</div>
+							<div>Date of Discussion</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member Name</div>
+						</div>
+						<div>
+							<div>ZTDPCODE</div>
+							<div>Discussion Plan Code</div>
+						</div>
+						<div>
+							<div>ZTDPCODE_DESC</div>
+							<div>Discussion Plan Description</div>
+						</div>
+						<div>
+							<div>ZTCURDPTOT</div>
+							<div>Current Discussion Plan Total</div>
+						</div>
+						<div>
+							<div>ZTBAKIN</div>
+							<div></div>
+						</div>
+						<div>
+							<div>ZTLEVEL</div>
+							<div>Current Phase Level</div>
+						</div>
+						<div>
+							<div>ZTSUNA</div>
+							<div></div>
+						</div>
+						<div>
+							<div>ZTDISSM</div>
+							<div></div>
+						</div>
+						<div>
+							<div>ZTSPAC</div>
+							<div></div>
+						</div>
+						<div>
+							<div>ZTPERRE</div>
+							<div></div>
+						</div>
+						<div>
+							<div>ZTFOPE</div>
+							<div>Follow Up Performed</div>
+						</div>
+						<div>
+							<div>ZTFODT</div>
+							<div>Follow Up Date</div>
+						</div>
+						<div>
+							<div>ZTREPORT</div>
+							<div>Full Report</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{ 
+						"ZTSDATE": "999999",
+						"ZTEDATE": "",
+						"ZTMNO": "",
+						"ZTDPTOT": "1",
+						"ZTSHOP": "",
+						"ZTLINE": "",
+						"ZTSHIFT": "",
+						"ZTACT": "",
+						"ZTTEM": "",
+						"ZTISDT": "",
+						"ZTDIDT": "",
+						"ZTMNE": "",
+						"ZTDPCODE": "",
+						"ZTDPCODE_DESC": "",
+						"ZTCURDPTOT": "",
+						"ZTBAKIN": "",
+						"ZTLEVEL": "",
+						"ZTSUNA": "",
+						"ZTDISSM": "",
+						"ZTSPAC": "",
+						"ZTPERRE": "",
+						"ZTFOPE": "",
+						"ZTFODT": "",
+						"ZTREPORT": ""
+					} 
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">DELETE</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/DiscussionPlanSet(ZTMNO='999999',ZTDPTOT='1')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_DISCUSSION</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Station Group ID Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					GetMoGrpIDSet
+					<span>Group ID Detail</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/GetMoGrpIDSet?$filter=ZTSHOP eq 'GA' and ZTGRPID eq ''&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_MOGRPID</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTGRPID</div>
+							<div>Station group</div>
+						</div>
+						<div class="key">
+							<div>ZTMOLO</div>
+							<div>Monitor location</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"d" : {
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetMoGrpIDSet(ZTSHOP='GA',ZTGRPID='001',ZTMOLO='T1-01L')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetMoGrpIDSet(ZTSHOP='GA',ZTGRPID='001',ZTMOLO='T1-01L')",
+										"type" : "Z_HALO_SRV.GetMoGrpID"
+									},
+									"ZTSHOP" : "GA",
+									"ZTGRPID" : "001",
+									"ZTMOLO" : "T1-01L",
+									"SUCCESS" : "",
+									"ERR_MSG" : ""					
+								}
+							]
+						} 
+					} 
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/GetMoGrpIDSet<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_MOGRPID</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTGRPID</div>
+							<div>Station group</div>
+						</div>
+						<div class="key">
+							<div>ZTMOLO</div>
+							<div>Monitor location</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"ZTSHOP" : "GA",
+						"ZTGRPID" : "001",
+						"ZTMOLO" : "T1-01L"
+					} 
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">DELETE</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/GetMoGrpIDSet(ZTSHOP='GA',ZTGRPID='001',ZTMOLO='T1-01L')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_MOGRPID</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTGRPID</div>
+							<div>Station group</div>
+						</div> 
+						<div class="key">
+							<div>ZTMOLO</div>
+							<div>Monitor location</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Station Setup Master Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					StationMasterSet
+					<span>Stattion Master Value</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/StationMasterSet?$filter=ZTSHOP eq 'GA' and ZTLINE eq '' and ZTERGOST eq '' and ZTGRPID eq''&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_STATION</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div>
+							<div>ZTERGOST</div>
+							<div>ROTATION PERIOD (IN HOURS)</div>
+						</div>
+						<div>
+							<div>ZTERGOST_VALUE</div>
+							<div>Ergo Value</div>
+						</div>
+						<div>
+							<div>ZTGRPID</div>
+							<div>Station group</div>
+						</div>
+						<div>
+							<div>ZTMOLO</div>
+							<div>Monitor location</div>
+						</div>
+						<div>
+							<div>ZTQACT</div>
+							<div>Active / Inactive</div>
+						</div>
+						<div>
+							<div>ZTDTCC</div>
+							<div>Department Code Cost Center</div>
+						</div>
+						<div>
+							<div>ZTDTNA</div>
+							<div>Department Name (Time Admin Code)</div>
+						</div>
+						<div>
+							<div>ZTUNDBO</div>
+							<div>Underbody Job</div>
+						</div>
+						<div>
+							<div>ZTIQISID</div>
+							<div>IQIS ID</div>
+						</div>
+						<div>
+							<div>ZTTMSVID</div>
+							<div>GMES TM Server ID</div>
+						</div>
+						<div>
+							<div>ZTTMRL</div>
+							<div>Team Relations</div>
+						</div>
+						<div>
+							<div>ZTSTMN</div>
+							<div>Maintenance</div>
+						</div>
+						<div>
+							<div>ZTPAQY</div>
+							<div>Part Quality</div>
+						</div>
+						<div>
+							<div>ZTWLRP</div>
+							<div>Weld Repair</div>
+						</div>
+						<div>
+							<div>ZTELRP</div>
+							<div>Electrical Repair</div>
+						</div>
+						<div>
+							<div>ZTEITR</div>
+							<div>E/I Trainer</div>
+						</div>
+						<div>
+							<div>ZTPRCO</div>
+							<div>Production Control</div>
+						</div>
+						<div>
+							<div>ZTSAFE</div>
+							<div>Safety</div>
+						</div>
+						<div>
+							<div>ZTVHINA1</div>
+							<div>VEHICLE 1 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS1</div>
+							<div>ZTVHSWIS1</div>
+						</div>
+						<div>
+							<div>ZTVHINA2</div>
+							<div>VEHICLE 2 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS2</div>
+							<div>VEHICLE 2 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA3</div>
+							<div>VEHICLE 3 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS3</div>
+							<div>VEHICLE 3 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA4</div>
+							<div>VEHICLE 4 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS4</div>
+							<div>VEHICLE 4 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA5</div>
+							<div>VEHICLE 5 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS5</div>
+							<div>VEHICLE 5 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA6</div>
+							<div>VEHICLE 6 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS6</div>
+							<div>VEHICLE 6 SWIS LINK</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"d" : {
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/StationMasterSet(ZTSHOP='',ZTLINE='',ZTSTAT='')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/StationMasterSet(ZTSHOP='',ZTLINE='',ZTSTAT='')",
+										"type" : "Z_HALO_SRV.StationMaster"
+									},
+									"ZTSHOP" : "",
+									"ZTLINE" : "",
+									"ZTSTAT" : "",
+									"ZTERGOST" : "",
+									"ZTERGOST_VALUE" : "",
+									"ZTGRPID" : "",
+									"ZTMOLO" : "",
+									"ZTQACT" : "",
+									"ZTDTCC" : "",
+									"ZTDTNA" : "",
+									"ZTUNDBO" : "",
+									"ZTIQISID" : "",
+									"ZTTMSVID" : "",
+									"ZTTMRL" : "",
+									"ZTSTMN" : "",
+									"ZTPAQY" : "",
+									"ZTWLRP" : "",
+									"ZTELRP" : "",
+									"ZTEITR" : "",
+									"ZTPRCO" : "",
+									"ZTSAFE" : "",
+									"ZTVHINA1" : "",
+									"ZTVHSWIS1" : "",
+									"ZTVHINA2" : "",
+									"ZTVHSWIS2" : "",
+									"ZTVHINA3" : "",
+									"ZTVHSWIS3" : "",
+									"ZTVHINA4" : "",
+									"ZTVHSWIS4" : "",
+									"ZTVHINA5" : "",
+									"ZTVHSWIS5" : "",
+									"ZTVHINA6" : "",
+									"ZTVHSWIS6" : "",
+									"SUCCESS" : "S",
+									"ERR_MSG" : "No results"										
+								}
+							]
+						} 
+					} 
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/StationMasterSet<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_STATION</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div>
+							<div>ZTERGOST</div>
+							<div>ROTATION PERIOD (IN HOURS)</div>
+						</div>
+						<div>
+							<div>ZTERGOST_VALUE</div>
+							<div>Ergo Value</div>
+						</div>
+						<div>
+							<div>ZTGRPID</div>
+							<div>Station group</div>
+						</div>
+						<div>
+							<div>ZTMOLO</div>
+							<div>Monitor location</div>
+						</div>
+						<div>
+							<div>ZTQACT</div>
+							<div>Active / Inactive</div>
+						</div>
+						<div>
+							<div>ZTDTCC</div>
+							<div>Department Code Cost Center</div>
+						</div>
+						<div>
+							<div>ZTDTNA</div>
+							<div>Department Name (Time Admin Code)</div>
+						</div>
+						<div>
+							<div>ZTUNDBO</div>
+							<div>Underbody Job</div>
+						</div>
+						<div>
+							<div>ZTIQISID</div>
+							<div>IQIS ID</div>
+						</div>
+						<div>
+							<div>ZTTMSVID</div>
+							<div>GMES TM Server ID</div>
+						</div>
+						<div>
+							<div>ZTTMRL</div>
+							<div>Team Relations</div>
+						</div>
+						<div>
+							<div>ZTSTMN</div>
+							<div>Maintenance</div>
+						</div>
+						<div>
+							<div>ZTPAQY</div>
+							<div>Part Quality</div>
+						</div>
+						<div>
+							<div>ZTWLRP</div>
+							<div>Weld Repair</div>
+						</div>
+						<div>
+							<div>ZTELRP</div>
+							<div>Electrical Repair</div>
+						</div>
+						<div>
+							<div>ZTEITR</div>
+							<div>E/I Trainer</div>
+						</div>
+						<div>
+							<div>ZTPRCO</div>
+							<div>Production Control</div>
+						</div>
+						<div>
+							<div>ZTSAFE</div>
+							<div>Safety</div>
+						</div>
+						<div>
+							<div>ZTVHINA1</div>
+							<div>VEHICLE 1 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS1</div>
+							<div>ZTVHSWIS1</div>
+						</div>
+						<div>
+							<div>ZTVHINA2</div>
+							<div>VEHICLE 2 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS2</div>
+							<div>VEHICLE 2 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA3</div>
+							<div>VEHICLE 3 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS3</div>
+							<div>VEHICLE 3 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA4</div>
+							<div>VEHICLE 4 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS4</div>
+							<div>VEHICLE 4 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA5</div>
+							<div>VEHICLE 5 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS5</div>
+							<div>VEHICLE 5 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA6</div>
+							<div>VEHICLE 6 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS6</div>
+							<div>VEHICLE 6 SWIS LINK</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"ZTSHOP" : "GA",
+						"ZTLINE" : "C1",
+						"ZTSTAT" : "C1-10L",
+						"ZTERGOST" : "X",
+						"ZTERGOST_VALUE" : "2",
+						"ZTGRPID" : "39",
+						"ZTMOLO" : "C1-09R",
+						"ZTQACT" : "ACTIVE",
+						"ZTDTCC" : "MXTX13",
+						"ZTDTNA" : "C1A",
+						"ZTUNDBO" : "YES",
+						"ZTIQISID" : "HALO_01",
+						"ZTTMSVID" : "TM_Server_01",
+						"ZTTMRL" : "TR-TR1",
+						"ZTSTMN" : "MA-MA1",
+						"ZTPAQY" : "PQ-PQ1",
+						"ZTWLRP" : "PDI-WR",
+						"ZTELRP" : "PDI-ER",
+						"ZTEITR" : "SA-EI",
+						"ZTPRCO" : "PC-PC",
+						"ZTSAFE" : "SA-EMER",
+						"ZTVHINA1" : "LF",
+						"ZTVHSWIS1" : "http://hmmamq02.hmma.hmgc.net/html/#/login",
+						"ZTVHINA2" : "AD",
+						"ZTVHSWIS2" : "http://hmmamq02.hmma.hmgc.net/html/#/login",
+						"ZTVHINA3" : "TM",
+						"ZTVHSWIS3" : "http://hmmamq02.hmma.hmgc.net/html/#/login",
+						"ZTVHINA4" : "DN8",
+						"ZTVHSWIS4" : "",
+						"ZTVHINA5" : "CN7",
+						"ZTVHSWIS5" : "http://hmmamq02.hmma.hmgc.net/html/#/login",
+						"ZTVHINA6" : "CN8",
+						"ZTVHSWIS6" : "http://hmmamq02.hmma.hmgc.net/html/#/login"
+					} 
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">PUT</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/StationMasterSet(ZTSHOP='GA',ZTLINE='C1',ZTSTAT='C1-10L')?$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_STATION</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div>
+							<div>ZTERGOST</div>
+							<div>ROTATION PERIOD (IN HOURS)</div>
+						</div>
+						<div>
+							<div>ZTERGOST_VALUE</div>
+							<div>Ergo Value</div>
+						</div>
+						<div>
+							<div>ZTGRPID</div>
+							<div>Station group</div>
+						</div>
+						<div>
+							<div>ZTMOLO</div>
+							<div>Monitor location</div>
+						</div>
+						<div>
+							<div>ZTQACT</div>
+							<div>Active / Inactive</div>
+						</div>
+						<div>
+							<div>ZTDTCC</div>
+							<div>Department Code Cost Center</div>
+						</div>
+						<div>
+							<div>ZTDTNA</div>
+							<div>Department Name (Time Admin Code)</div>
+						</div>
+						<div>
+							<div>ZTUNDBO</div>
+							<div>Underbody Job</div>
+						</div>
+						<div>
+							<div>ZTIQISID</div>
+							<div>IQIS ID</div>
+						</div>
+						<div>
+							<div>ZTTMSVID</div>
+							<div>GMES TM Server ID</div>
+						</div>
+						<div>
+							<div>ZTTMRL</div>
+							<div>Team Relations</div>
+						</div>
+						<div>
+							<div>ZTSTMN</div>
+							<div>Maintenance</div>
+						</div>
+						<div>
+							<div>ZTPAQY</div>
+							<div>Part Quality</div>
+						</div>
+						<div>
+							<div>ZTWLRP</div>
+							<div>Weld Repair</div>
+						</div>
+						<div>
+							<div>ZTELRP</div>
+							<div>Electrical Repair</div>
+						</div>
+						<div>
+							<div>ZTEITR</div>
+							<div>E/I Trainer</div>
+						</div>
+						<div>
+							<div>ZTPRCO</div>
+							<div>Production Control</div>
+						</div>
+						<div>
+							<div>ZTSAFE</div>
+							<div>Safety</div>
+						</div>
+						<div>
+							<div>ZTVHINA1</div>
+							<div>VEHICLE 1 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS1</div>
+							<div>ZTVHSWIS1</div>
+						</div>
+						<div>
+							<div>ZTVHINA2</div>
+							<div>VEHICLE 2 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS2</div>
+							<div>VEHICLE 2 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA3</div>
+							<div>VEHICLE 3 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS3</div>
+							<div>VEHICLE 3 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA4</div>
+							<div>VEHICLE 4 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS4</div>
+							<div>VEHICLE 4 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA5</div>
+							<div>VEHICLE 5 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS5</div>
+							<div>VEHICLE 5 SWIS LINK</div>
+						</div>
+						<div>
+							<div>ZTVHINA6</div>
+							<div>VEHICLE 6 NAME</div>
+						</div>
+						<div>
+							<div>ZTVHSWIS6</div>
+							<div>VEHICLE 6 SWIS LINK</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"ZTSHOP" : "GA",
+						"ZTLINE" : "C1",
+						"ZTSTAT" : "C1-10L",
+						"ZTERGOST" : "X",
+						"ZTERGOST_VALUE" : "02",
+						"ZTGRPID" : "039",
+						"ZTMOLO" : "C1-09R",
+						"ZTQACT" : "ACTIVE",
+						"ZTDTCC" : "MXTX13",
+						"ZTDTNA" : "C1A",
+						"ZTUNDBO" : "YES",
+						"ZTIQISID" : "HALO_01",
+						"ZTTMSVID" : "TM_Serve",
+						"ZTTMRL" : "TR-TR1",
+						"ZTSTMN" : "MA-MA1",
+						"ZTPAQY" : "PQ-PQ1",
+						"ZTWLRP" : "PDI-WR",
+						"ZTELRP" : "PDI-ER",
+						"ZTEITR" : "SA-EI",
+						"ZTPRCO" : "PC-PC",
+						"ZTSAFE" : "SA-EMER",
+						"ZTVHINA1" : "LF",
+						"ZTVHSWIS1" : "http://hmmamq02.hmma.hmgc.net/",
+						"ZTVHINA2" : "AD",
+						"ZTVHSWIS2" : "http://hmmamq02.hmma.hmgc.net/",
+						"ZTVHINA3" : "TM",
+						"ZTVHSWIS3" : "http://hmmamq02.hmma.hmgc.net/",
+						"ZTVHINA4" : "DN8",
+						"ZTVHSWIS4" : "",
+						"ZTVHINA5" : "CN7",
+						"ZTVHSWIS5" : "http://hmmamq02.hmma.hmgc.net/",
+						"ZTVHINA6" : "CN8",
+						"ZTVHSWIS6" : "http://hmmamq02.hmma.hmgc.net/"
+					} 
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">DELETE</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/StationMasterSet(ZTSHOP='GA',ZTLINE='C1',ZTSTAT='C1-10L')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_STATION</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Station Setup Detail Master Table
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					StationSetupDetailSet
+					<span>Stattion Setup Detail</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/StationSetupDetailSet?$filter=ZTSHOP eq 'GA' and ZTLINE eq '' and ZTSUB eq '' and ZTSTAT eq '' and ZTGRPID eq '' and ZTMOLO eq ''&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_ALL_STATION</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div class="key">
+							<div>ZTSTLO</div>
+							<div>Station Raw</div>
+						</div>
+						<div class="key">
+							<div>ZTSUB</div>
+							<div>Station Role</div>
+						</div>
+						<div class="key">
+							<div>ZTLH</div>
+							<div>LH</div>
+						</div>
+						<div class="key">
+							<div>ZTRH</div>
+							<div>RH</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div>
+							<div>ZTSTINFO</div>
+							<div>Station sub-information</div>
+						</div>
+						<div>
+							<div>ZTGRPID</div>
+							<div>Station group</div>
+						</div>
+						<div>
+							<div>ZTMOLO</div>
+							<div>Monitor location</div>
+						</div>
+						<div>
+							<div>ZTSTSTA</div>
+							<div>Station Status</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"d" : {
+							"results" : [
+								{
+									"__metadata" : {
+										"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/StationSetupDetailSet(ZTSHOP='GA',ZTLINE='T1',ZTSUB='',ZTLH='X',ZTRH='',ZTTEM='T2A',ZTSTAT='T1-01L')",
+										"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/StationSetupDetailSet(ZTSHOP='GA',ZTLINE='T1',ZTSUB='',ZTLH='X',ZTRH='',ZTTEM='T2A',ZTSTAT='T1-01L')",
+										"type" : "Z_HALO_SRV.StationSetupDetail"
+									},
+									"ZTSHOP" : "GA",
+									"ZTLINE" : "T1",
+									"ZTSTLO" : "T1-01",
+									"ZTSUB" : "",
+									"ZTLH" : "X",
+									"ZTRH" : "",
+									"ZTTEM" : "T2A",
+									"ZTSTAT" : "T1-01L",
+									"ZTSTINFO" : "",
+									"ZTGRPID" : "001",
+									"ZTMOLO" : "T1-01L",
+									"ZTSTSTA" : "X",
+									"SUCCESS" : "",
+									"ERR_MSG" : ""															
+								}
+							]
+						} 
+					} 
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/StationSetupDetailSet<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_ALL_STATION</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div class="key">
+							<div>ZTSTLO</div>
+							<div>Station Raw</div>
+						</div>
+						<div class="key">
+							<div>ZTSUB</div>
+							<div>Station Role</div>
+						</div>
+						<div class="key">
+							<div>ZTLH</div>
+							<div>LH</div>
+						</div>
+						<div class="key">
+							<div>ZTRH</div>
+							<div>RH</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div>
+							<div>ZTSTINFO</div>
+							<div>Station sub-information</div>
+						</div>
+						<div>
+							<div>ZTGRPID</div>
+							<div>Station group</div>
+						</div>
+						<div>
+							<div>ZTMOLO</div>
+							<div>Monitor location</div>
+						</div>
+						<div>
+							<div>ZTSTSTA</div>
+							<div>Station Status</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"ZTSHOP" : "GA",
+						"ZTLINE" : "ALIGN",
+						"ZTSTLO" : "PDI-DRIVE1",
+						"ZTSUB" : "UP-2",
+						"ZTLH" : "X",
+						"ZTRH" : "",
+						"ZTTEM" : "P7A",
+						"ZTSTAT" : "ALIGN-01L",
+						"ZTSTINFO" : "",
+						"ZTGRPID" : "151",
+						"ZTMOLO" : "ALIGN-UPSTAIRS",
+						"ZTSTSTA" : ""				
+					} 
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">PUT</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO/StationSetupDetailSet(ZTSHOP='GA',ZTLINE='ALIGN',ZTSUB='UP-2',ZTLH='X',ZTRH='',ZTTEM='P7A',ZTSTAT='ALIGN-01L')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_ALL_STATION</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div class="key">
+							<div>ZTSTLO</div>
+							<div>Station Raw</div>
+						</div>
+						<div class="key">
+							<div>ZTSUB</div>
+							<div>Station Role</div>
+						</div>
+						<div class="key">
+							<div>ZTLH</div>
+							<div>LH</div>
+						</div>
+						<div class="key">
+							<div>ZTRH</div>
+							<div>RH</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div class="key">
+							<div>ZTSTAT</div>
+							<div>Station</div>
+						</div>
+						<div>
+							<div>ZTSTINFO</div>
+							<div>Station sub-information</div>
+						</div>
+						<div>
+							<div>ZTGRPID</div>
+							<div>Station group</div>
+						</div>
+						<div>
+							<div>ZTMOLO</div>
+							<div>Monitor location</div>
+						</div>
+						<div>
+							<div>ZTSTSTA</div>
+							<div>Station Status</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"ZTSHOP" : "GA",
+						"ZTLINE" : "ALIGN",
+						"ZTSTLO" : "PDI-DRIVE1",
+						"ZTSUB" : "UP-2",
+						"ZTLH" : "X",
+						"ZTRH" : "",
+						"ZTTEM" : "P7A",
+						"ZTSTAT" : "ALIGN-01L",
+						"ZTSTINFO" : "",
+						"ZTGRPID" : "151",
+						"ZTMOLO" : "ALIGN-UPSTAIRS",
+						"ZTSTSTA" : ""							
+					} 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Master Value Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					ShopMasterSet
+					<span>Shop Master Value</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/ShopMasterSet?$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_SHOP</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP Information</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"d": {
+								"results": [
+									{
+										"__metadata": {
+											"id": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/ShopMasterSet('ADMIN')",
+											"uri": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/ShopMasterSet('ADMIN')",
+											"type": "Z_HALO_SRV.ShopMaster"
+										},
+										"ZTSHOP": "ADMIN",
+										"SUCCESS": "",
+										"ERR_MSG": ""
+									}
+								]
+							}
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/ShopMasterSet<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_SHOP</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP Information</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"ZTSHOP" : "ENGINE99"
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">DELETE</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/ShopMasterSet('ENGINE99')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_SHOP</div>
+				</div>		
+			</div>
+			<div class="api">
+				<div class="name">
+					LineMasterSet
+					<span>Line Master Value</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/LineMasterSet?$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_LINE</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>SHOP Information</div>
+						</div>
+						<div>
+							<div>ZTLIGR</div>
+							<div>LINE group</div>
+						</div>
+						<div>
+							<div>ZTSORT</div>
+							<div>Sort Number</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"d": {
+								"results": [
+									{
+										"__metadata": {
+											"id": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/LineMasterSet('T1')",
+											"uri": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/LineMasterSet('T1')",
+											"type": "Z_HALO_SRV.LineMaster"
+										},
+										"ZTLINE": "T1",
+										"ZTLIGR": "TRIM",
+										"ZTSORT": "001",
+										"SUCCESS": "",
+										"ERR_MSG": ""
+									}
+								]
+							}
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/LineMasterSet<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_LINE</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>SHOP Information</div>
+						</div>
+						<div>
+							<div>ZTLIGR</div>
+							<div>LINE group</div>
+						</div>
+						<div>
+							<div>ZTSORT</div>
+							<div>Sort Number</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"ZTLINE" : "TEST_LINE",
+							"ZTLIGR" : "TEST_GROUP",
+							"ZTSORT" : "999"
+						}						
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">PUT</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/LineMasterSet('TEST_LINE')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_LINE</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>SHOP Information</div>
+						</div>
+						<div>
+							<div>ZTLIGR</div>
+							<div>LINE group</div>
+						</div>
+						<div>
+							<div>ZTSORT</div>
+							<div>Sort Number</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"ZTLINE" : "TEST_LINE",
+							"ZTLIGR" : "TEST_GROUP_PUT",
+							"ZTSORT" : "888"
+						}						
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">DELETE</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/LineMasterSet('TEST_LINE')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_LINE</div>
+				</div>		
+			</div>
+			<div class="api">
+				<div class="name">
+					RoleMasterSet
+					<span>Role Master Value</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/RoleMasterSet?$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_ROLE</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTROLE</div>
+							<div>ROLE Information</div>
+						</div>
+						<div>
+							<div>ZTPRI</div>
+							<div>PRI</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"d": {
+								"results": [
+									{
+										"__metadata": {
+											"id": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/RoleMasterSet('TEAM_LEADER')",
+											"uri": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/RoleMasterSet('TEAM_LEADER')",
+											"type": "Z_HALO_SRV.RoleMaster"
+										},
+										"ZTROLE": "TEAM_LEADER",
+										"ZTPRI": "03",
+										"SUCCESS": "",
+										"ERR_MSG": ""
+									}
+								]
+							}
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/RoleMasterSet<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_ROLE</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTROLE</div>
+							<div>ROLE Information</div>
+						</div>
+						<div>
+							<div>ZTPRI</div>
+							<div>PRI</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"ZTROLE" : "TESTER1",
+							"ZTPRI" : "99"
+						}												
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">PUT</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/RoleMasterSet('TESTER1')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_ROLE</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTROLE</div>
+							<div>ROLE Information</div>
+						</div>
+						<div>
+							<div>ZTPRI</div>
+							<div>PRI</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"ZTROLE" : "TESTER1",
+							"ZTPRI" : "88"
+						}						
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">DELETE</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/RoleMasterSet('TESTER1')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_ROLE</div>
+				</div>		
+			</div>
+			<div class="api">
+				<div class="name">
+					ShiftMasterSet
+					<span>Shift Master Value</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/ShiftMasterSet?$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_SHIFT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHIFT</div>
+							<div>SHIFT Information</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"d": {
+								"results": [
+									{
+										"__metadata": {
+											"id": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/ShiftMasterSet('A')",
+											"uri": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/ShiftMasterSet('A')",
+											"type": "Z_HALO_SRV.ShiftMaster"
+										},
+										"ZTSHIFT": "A",
+										"SUCCESS": "",
+										"ERR_MSG": ""
+									}
+								]
+							}
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/ShiftMasterSet<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_SHIFT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHIFT</div>
+							<div>SHIFT Information</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"ZTSHIFT" : "TEST_SHIFT"
+						}												
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">DELETE</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/ShiftMasterSet('TEST_SHIFT')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_SHIFT</div>
+				</div>		
+			</div>
+			<div class="api">
+				<div class="name">
+					TmpCompMasterSet
+					<span>Temp Company Master Value</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/TmpCompMasterSet?$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_TECOM</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTTECOM</div>
+							<div>Temp Company Information</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"d": {
+								"results": [
+									{
+										"__metadata": {
+											"id": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/TmpCompMasterSet('AEROTEK')",
+											"uri": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/TmpCompMasterSet('AEROTEK')",
+											"type": "Z_HALO_SRV.TmpCompMaster"
+										},
+										"ZTTECOM": "AEROTEK",
+										"SUCCESS": "",
+										"ERR_MSG": ""
+									}
+								]
+							}
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/TmpCompMasterSet<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_TECOM</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTTECOM</div>
+							<div>Temp Company Information</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"ZTTECOM" : "TEST_COMPANY"
+						}												
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">DELETE</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/RoleMasterSet('TESTER1')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_ROLE</div>
+				</div>		
+			</div>
+			<div class="api">
+				<div class="name">
+					DeptCoCntTmpMasterSet
+					<span>Department Code Cost Center(TEMP) Master Value</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/DeptCoCntTmpMasterSet?$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_DPCCT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDPCCT</div>
+							<div>TEMP Department Code Cost Center</div>
+						</div>
+						<div>
+							<div>ZTDPCCT_DESC</div>
+							<div>Description</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"d": {
+								"results": [
+									{
+										"__metadata": {
+											"id": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/DeptCoCntTmpMasterSet('AMXTX11')",
+											"uri": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/DeptCoCntTmpMasterSet('AMXTX11')",
+											"type": "Z_HALO_SRV.DeptCoCntTmpMaster"
+										},
+										"ZTDPCCT": "AMXTX11",
+										"ZTDPCCT_DESC": "TEMP T1,T2,T3",
+										"SUCCESS": "",
+										"ERR_MSG": ""
+									}
+								]
+							}
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/DeptCoCntTmpMasterSet<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_DPCCT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDPCCT</div>
+							<div>TEMP Department Code Cost Center</div>
+						</div>
+						<div>
+							<div>ZTDPCCT_DESC</div>
+							<div>Description</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"ZTDPCCT" : "TEST_CCT",
+							"ZTDPCCT_DESC": "TEST_DESCRIPTION"
+						}												
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">PUT</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/DeptCoCntTmpMasterSet('TEST_CCT')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_DPCCT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDPCCT</div>
+							<div>TEMP Department Code Cost Center</div>
+						</div>
+						<div>
+							<div>ZTDPCCT_DESC</div>
+							<div>Description</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"ZTDPCCT" : "TEST_CCT",
+							"ZTDPCCT_DESC": "TEST_DESCRIPTION_UPDATE"
+						}												
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">DELETE</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/DeptCoCntTmpMasterSet('TEST_CCT')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_DPCCT</div>
+				</div>		
+			</div>
+			<div class="api">
+				<div class="name">
+					DeptCoCntMasterSet
+					<span>Department Code Cost Center(NON-TEMP) Master Value</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/DeptCoCntMasterSet?$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_DPCCNT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDPCCNT</div>
+							<div>NON-TEMP Department Code Cost Center</div>
+						</div>
+						<div>
+							<div>ZTDPCCNT_DESC</div>
+							<div>Description</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"d": {
+								"results": [
+									{
+										"__metadata": {
+											"id": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/DeptCoCntMasterSet('55004')",
+											"uri": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/DeptCoCntMasterSet('55004')",
+											"type": "Z_HALO_SRV.DeptCoCntMaster"
+										},
+										"ZTDPCCNT": "55004",
+										"ZTDPCCNT_DESC": "SALARY",
+										"SUCCESS": "",
+										"ERR_MSG": ""
+									}
+								]
+							}
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/DeptCoCntMasterSet<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_DPCCNT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDPCCNT</div>
+							<div>NON-TEMP Department Code Cost Center</div>
+						</div>
+						<div>
+							<div>ZTDPCCNT_DESC</div>
+							<div>Description</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"ZTDPCCNT": "99999",
+							"ZTDPCCNT_DESC": "TEST"
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">PUT</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/DeptCoCntMasterSet('99999')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_DPCCNT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDPCCNT</div>
+							<div>NON-TEMP Department Code Cost Center</div>
+						</div>
+						<div>
+							<div>ZTDPCCNT_DESC</div>
+							<div>Description</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"ZTDPCCNT": "99999",
+							"ZTDPCCNT_DESC": "TEST_UPDATE"
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">DELETE</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/DeptCoCntMasterSet('99999')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_DPCCNT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTDPCCNT</div>
+							<div>NON-TEMP Department Code Cost Center</div>
+						</div>
+						<div>
+							<div>ZTDPCCNT_DESC</div>
+							<div>Description</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+			<div class="api">
+				<div class="name">
+					TrainStValueMasterSet
+					<span>Training Status Master Value</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/TrainStValueMasterSet?$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_TRMAT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSTAU</div>
+							<div>Training Status Value</div>
+						</div>
+						<div>
+							<div>ZTSTVA</div>
+							<div>Description</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"d": {
+								"results": [
+									{
+										"__metadata": {
+											"id": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/TrainStValueMasterSet('0')",
+											"uri": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/TrainStValueMasterSet('0')",
+											"type": "Z_HALO_SRV.TrainStValueMaster"
+										},
+										"ZTSTAU": "0",
+										"ZTSTVA": "0:  (0HRS) NO EXPERIENCE AT THIS STATION ",
+										"SUCCESS": "",
+										"ERR_MSG": ""
+									}
+								]
+							}
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/TrainStValueMasterSet<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_TRMAT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSTAU</div>
+							<div>Training Status Value</div>
+						</div>
+						<div>
+							<div>ZTSTVA</div>
+							<div>Description</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"ZTSTAU": "9",
+							"ZTSTVA": "9: TEST"
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">PUT</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/TrainStValueMasterSet('9')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_TRMAT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSTAU</div>
+							<div>Training Status Value</div>
+						</div>
+						<div>
+							<div>ZTSTVA</div>
+							<div>Description</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"ZTSTAU": "9",
+							"ZTSTVA": "9: TEST_UPDATE"
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">DELETE</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/TrainStValueMasterSet('9')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_TRMAT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSTAU</div>
+							<div>Training Status Value</div>
+						</div>
+						<div>
+							<div>ZTSTVA</div>
+							<div>Description</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+			<div class="api">
+				<div class="name">
+					DeptTimeAdminCodeMasterSet
+					<span>Department Name (Time Admin Code)</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/DeptTimeAdminCodeMasterSet?$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_DEPRT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>TEAM</div>
+						</div>
+						<div class="key">
+							<div>ZTSHIFT1</div>
+							<div>Team at 1st SHIFT</div>
+						</div>
+						<div class="key">
+							<div>ZTSHIFT2</div>
+							<div>Team at 2nd SHIFT</div>
+						</div>
+						<div class="key">
+								<div>ZTSHIFT3</div>
+								<div>Team at 3rd SHIFT</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"d": {
+								"results": [
+									{
+										"__metadata": {
+											"id": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/DeptTimeAdminCodeMasterSet(ZTLINE='C1',ZTTEM='C1',ZTSHIFT1='C1A',ZTSHIFT2='C1B',ZTSHIFT3='C1C')",
+											"uri": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/DeptTimeAdminCodeMasterSet(ZTLINE='C1',ZTTEM='C1',ZTSHIFT1='C1A',ZTSHIFT2='C1B',ZTSHIFT3='C1C')",
+											"type": "Z_HALO_SRV.DeptTimeAdminCodeMaster"
+										},
+										"ZTLINE": "C1",
+										"ZTTEM": "C1",
+										"ZTSHIFT1": "C1A",
+										"ZTSHIFT2": "C1B",
+										"ZTSHIFT3": "C1C",
+										"SUCCESS": "",
+										"ERR_MSG": ""
+									}
+								]
+							}
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/DeptTimeAdminCodeMasterSet<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_DEPRT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>TEAM</div>
+						</div>
+						<div class="key">
+							<div>ZTSHIFT1</div>
+							<div>Team at 1st SHIFT</div>
+						</div>
+						<div class="key">
+							<div>ZTSHIFT2</div>
+							<div>Team at 2nd SHIFT</div>
+						</div>
+						<div class="key">
+								<div>ZTSHIFT3</div>
+								<div>Team at 3rd SHIFT</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"ZTLINE": "TEST1",
+							"ZTTEM": "TEST1",
+							"ZTSHIFT1": "TEST1A",
+							"ZTSHIFT2": "TEST1B",
+							"ZTSHIFT3": "TEST1C"
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">DELETE</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/DeptTimeAdminCodeMasterSet(ZTLINE='TEST1',ZTTEM='TEST1',ZTSHIFT1='TEST1A',ZTSHIFT2='TEST1B',ZTSHIFT3='TEST1C')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_DEPRT</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div class="key">
+							<div>ZTTEM</div>
+							<div>TEAM</div>
+						</div>
+						<div class="key">
+							<div>ZTSHIFT1</div>
+							<div>Team at 1st SHIFT</div>
+						</div>
+						<div class="key">
+							<div>ZTSHIFT2</div>
+							<div>Team at 2nd SHIFT</div>
+						</div>
+						<div class="key">
+							<div>ZTSHIFT3</div>
+							<div>Team at 3rd SHIFT</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+			<div class="api">
+				<div class="name">
+					AttendanceCdMasterSet
+					<span>Attendance Code Master Value</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/AttendanceCdMasterSet?$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_ATT_CODE</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTATTCD</div>
+							<div>Attendance Display Code</div>
+						</div>
+						<div class="key">
+							<div>ZTKRATCD</div>
+							<div>Kronos Attendance Code</div>
+						</div>
+						<div class="key">
+							<div>ZTATTHOUR</div>
+							<div>Attendance hour</div>
+						</div>
+						<div>
+							<div>ZTATDES</div>
+							<div>Description</div>
+						</div>
+						<div>
+							<div>ZTATWTU</div>
+							<div>When To Use</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"d": {
+								"results": [
+									{
+										"__metadata": {
+											"id": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/AttendanceCdMasterSet(ZTATTCD='02-8',ZTKRATCD='02',ZTATTHOUR='8')",
+											"uri": "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/AttendanceCdMasterSet(ZTATTCD='02-8',ZTKRATCD='02',ZTATTHOUR='8')",
+											"type": "Z_HALO_SRV.AttendanceCdMaster"
+										},
+										"ZTATTCD": "02-8",
+										"ZTKRATCD": "02",
+										"ZTATTHOUR": "8",
+										"ZTATDES": "Temp_Unexcused Absent 8 hours",
+										"ZTATWTU": "Temporary employee not present",
+										"SUCCESS": "",
+										"ERR_MSG": ""
+									}
+								]
+							}
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/AttendanceCdMasterSet<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_ATT_CODE</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTATTCD</div>
+							<div>Attendance Display Code</div>
+						</div>
+						<div class="key">
+							<div>ZTKRATCD</div>
+							<div>Kronos Attendance Code</div>
+						</div>
+						<div class="key">
+							<div>ZTATTHOUR</div>
+							<div>Attendance hour</div>
+						</div>
+						<div>
+							<div>ZTATDES</div>
+							<div>Description</div>
+						</div>
+						<div>
+							<div>ZTATWTU</div>
+							<div>When To Use</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"ZTATTCD": "99-8",
+							"ZTKRATCD": "99",
+							"ZTATTHOUR": "8",
+							"ZTATDES": "Test 8 hours",
+							"ZTATWTU": "Test Attendance Code"
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">PUT</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/AttendanceCdMasterSet(ZTATTCD='99-8',ZTKRATCD='99',ZTATTHOUR='8')",<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_ATT_CODE</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTATTCD</div>
+							<div>Attendance Display Code</div>
+						</div>
+						<div class="key">
+							<div>ZTKRATCD</div>
+							<div>Kronos Attendance Code</div>
+						</div>
+						<div class="key">
+							<div>ZTATTHOUR</div>
+							<div>Attendance hour</div>
+						</div>
+						<div>
+							<div>ZTATDES</div>
+							<div>Description</div>
+						</div>
+						<div>
+							<div>ZTATWTU</div>
+							<div>When To Use</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"ZTATTCD": "99-8",
+							"ZTKRATCD": "99",
+							"ZTATTHOUR": "8",
+							"ZTATDES": "Test 8 hours_UPDATE",
+							"ZTATWTU": "Test Attendance Code_UPDATE"
+						}
+					</div>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">DELETE</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/DeptTimeAdminCodeMasterSetAttendanceCdMasterSet(ZTATTCD='99-8',ZTKRATCD='99',ZTATTHOUR='8')<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_ATT_CODE</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTATTCD</div>
+							<div>Attendance Display Code</div>
+						</div>
+						<div class="key">
+							<div>ZTKRATCD</div>
+							<div>Kronos Attendance Code</div>
+						</div>
+						<div class="key">
+							<div>ZTATTHOUR</div>
+							<div>Attendance hour</div>
+						</div>
+						<div>
+							<div>ZTATDES</div>
+							<div>Description</div>
+						</div>
+						<div>
+							<div>ZTATWTU</div>
+							<div>When To Use</div>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			Common Value Table Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					GetCommonValueSet
+					<span>Common Value</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/GetCommonValueSet?$filter=ZTCOMMON eq 'CM01'&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_V_COMMON</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTCOMMON</div>
+							<div>COMMON CODE</div>
+						</div>
+						<div>
+							<div>ZTCMVAL</div>
+							<div>COMMON VALUE</div>
+						</div>
+						<div>
+							<div>ZTCOMDIS</div>
+							<div>COMMON Description</div>
+						</div>
+						<div>
+							<div>ZTCMVAL_LV2</div>
+							<div>COMMON VALUE LEVEL 2</div>
+						</div>
+						<div>
+							<div>ZTCOMDIS_LV2</div>
+							<div>COMMON Description LEVEL 2</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"d": {
+								"results": [
+									{
+										"__metadata" : {
+											"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetCommonValueSet('CM01')",
+											"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetCommonValueSet('CM01')",
+											"type" : "Z_HALO_SRV.GetCommonValue"
+										},
+										"ZTCOMMON" : "CM01",
+										"ZTCMVAL" : "C001",
+										"ZTCOMDIS" : "REGULER PRODUCTION",
+										"ZTCMVAL_LV2" : "",
+										"ZTCOMDIS_LV2" : "",
+										"SUCCESS" : "",
+										"ERR_MSG" : ""						
+									}
+								]
+							}
+						}
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<div class="group">
+		<div class="group-name">
+			KIOSK API Detail
+		</div>
+		<div class="list">
+			<div class="api">
+				<div class="name">
+					GetStationGroupAllSet
+					<span>Station Group All</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/GetStationGroupAllSet?$filter=ZTSHOP eq 'BODY'&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">?</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>?</div>
+							<div>?</div>
+						</div>
+					</div>
+					<!-- <div class="json spec">
+					</div> -->
+				</div>	
+			</div>
+			<div class="api">
+				<div class="name">
+					GetShopAllSet
+					<span>Shop All</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/GetShopAllSet?$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">?</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>?</div>
+							<div>?</div>
+						</div>
+					</div>
+					<!-- <div class="json spec">
+					</div> -->
+				</div>	
+			</div>
+			<div class="api">
+				<div class="name">
+					SetRegisterStationSet
+					<span>Register Station</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">PUT</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/SetRegisterStationSet(ZTSHOP='GA',ZTGRPID='001')<span class="copy"></span>
+					</div>
+					<div class="table spec">?</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTGRPID</div>
+							<div>Group ID</div>
+						</div>
+						<div>
+							<div>ZTSTSTA</div>
+							<div>?</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"ZTSHOP" : "GA",  
+							"ZTGRPID" : "001",  
+							"ZTSTSTA" : "X"
+						}
+					</div>
+				</div>	
+			</div>
+			<div class="api">
+				<div class="name">
+					GetStationInfoSet
+					<span>Station Information</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/GetStationInfoSet?$filter=ZTSHOP eq 'GA' and ZTGRPID eq '001'&$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_ALL_STATION, ZTHA_LOGIO</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div class="key">
+							<div>ZTGRPID</div>
+							<div>Group ID</div>
+						</div>
+						<div>
+							<div>ZTSTSTA</div>
+							<div>?</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"d" : {
+								"results" : [
+									{
+										"__metadata" : { 
+											"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetStationInfoSet(ZTSHOP='GA', ZTGRPID='001')", 
+											"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetStationInfoSet(ZTSHOP='GA', ZTGRPID ='001')", 
+											"type" : "Z_HALO_SRV.GetStationInfo" 
+										}, 
+										"ZTSHOP" : "GA", 
+										"ZTLINE" : "T1", 
+										"ZTSTAT" : "T1-01", 
+										"ZTLH" : "", 
+										"ZTRH" : "X", 
+										"ZTTEM" : "T1A", 
+										"ZTGRPID" : "001", 
+										"ZTMOLO" : "T1-01R", 
+										"ZTBADG" : "00000000000201062969", 
+										"ZTMNE" : "TEST HONG", 
+										"ZTLIDT" : "", 
+										"ZTLITM" : "082525", 
+										"ZTLIST" : "X", 
+										"ZTSEQ_NO_LI" : "192233", 
+										"ZTLODT" : "00000000", 
+										"ZTLOTM" : "", 
+										"ZTLOST" : "", 
+										"ZTSEQ_NO_LO" : "000000", 
+										"SUCESS" : "", 
+										"ERR_MSG" : ""
+									}
+								]
+							}
+						}
+					</div>
+				</div>	
+			</div>
+			<div class="api">
+				<div class="name">
+					SetLogSaveSet
+					<span>Log Save</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">POST</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/SetLogSaveSet <span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_LOGIO</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTBADG</div>
+							<div>T/M Badge ID</div>
+						</div>
+						<div>
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div>
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div>
+							<div>ZTLH</div>
+							<div>LH</div>
+						</div>
+						<div>
+							<div>ZTRH</div>
+							<div>RH</div>
+						</div>
+						<div>
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member (T/M) Name</div>
+						</div>
+						<div>
+							<div>ZTLIDT</div>
+							<div>LOG IN DATE</div>
+						</div>
+						<div>
+							<div>ZTLITM</div>
+							<div>LOG IN TIME</div>
+						</div>
+						<div>
+							<div>ZTLODT</div>
+							<div>LOG OUT DATE</div>
+						</div>
+						<div>
+							<div>ZTLOTM</div>
+							<div>LOG OUT TIME</div>
+						</div>
+						<div>
+							<div>ZTSEQ_NO_LI</div>
+							<div>Login DD+SEQ No.</div>
+						</div>
+						<div>
+							<div>ZTSEQ_NO_LO</div>
+							<div>Logout DD+SEQ No.</div>
+						</div>
+						<div>
+							<div>ZTCMVAL</div>
+							<div>COMMON VALUE</div>
+						</div>
+					</div>
+					<div class="json spec">
+					{
+						"ZTSHOP" : "GA", 
+						"ZTLINE" : "T1-01", 
+						"ZTLH" : "X", 
+						"ZTRH" : "", 
+						"ZTTEM" : "", 
+						"ZTBADG" : "00000000000201062960", 
+						"ZTMNE" : "", 
+						"ZTLIDT" : "20190918", 
+						"ZTLITM" : "081531", 
+						"ZTLODT" : "00000000", 
+						"ZTLOTM" : "000000", 
+						"ZTSEQ_NO_LI" : "181122", 
+						"ZTSEQ_NO_LO" : "000000", 
+						"ZTCMVAL" : "C002"
+					}
+					</div>
+				</div>	
+			</div>
+			<div class="api">
+				<div class="name">
+					GetLoginStBadgeIdSet
+					<span>Login Status by Badge ID </span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/GetLoginStBadgeIdSet(ZTBADG='201062966')?$format=json <span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_LOGIO</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTBADG</div>
+							<div>T/M Badge ID</div>
+						</div>
+						<div>
+							<div>ZTSHOP</div>
+							<div>SHOP</div>
+						</div>
+						<div>
+							<div>ZTLINE</div>
+							<div>LINE</div>
+						</div>
+						<div>
+							<div>ZTLH</div>
+							<div>LH</div>
+						</div>
+						<div>
+							<div>ZTRH</div>
+							<div>RH</div>
+						</div>
+						<div>
+							<div>ZTTEM</div>
+							<div>Team</div>
+						</div>
+						<div>
+							<div>ZTMNE</div>
+							<div>Team Member (T/M) Name</div>
+						</div>
+						<div>
+							<div>ZTLIDT</div>
+							<div>LOG IN DATE</div>
+						</div>
+						<div>
+							<div>ZTLITM</div>
+							<div>LOG IN TIME</div>
+						</div>
+						<div>
+							<div>ZTLODT</div>
+							<div>LOG OUT DATE</div>
+						</div>
+						<div>
+							<div>ZTLOTM</div>
+							<div>LOG OUT TIME</div>
+						</div>
+						<div>
+							<div>ZTSEQ_NO_LI</div>
+							<div>Login DD+SEQ No.</div>
+						</div>
+						<div>
+							<div>ZTSEQ_NO_LO</div>
+							<div>Logout DD+SEQ No.</div>
+						</div>
+						<div>
+							<div>ZTCMVAL</div>
+							<div>COMMON VALUE</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"d" : {
+								"__metadata" : { 
+									"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetLoginStBadgeIdSet('00000000000201062966')", 
+									"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetLoginStBadgeIdSet('00000000000201062966')", 
+									"type" : "Z_HALO_SRV.GetLoginStByBadgeId" 
+								}, 
+								"ZTSHOP" : "GA", 
+								"ZTLINE" : "T1-02", 
+								"ZTLH" : "X", 
+								"ZTRH" : "", 
+								"ZTTEM" : "T1-TEAM", 
+								"ZTBADG" : "00000000000201062966", 
+								"ZTMNE" : "JANE SMITH", 
+								"ZTLIDT" : "20191002", 
+								"ZTLITM" : "081015", 
+								"ZTLODT" : "00000000", 
+								"ZTLOTM" : "172530", 
+								"ZTSEQ_NO_LI" : "031234", 
+								"ZTSEQ_NO_LO" : "000000", 
+								"ZTCMVAL" : "C001", 
+								"SUCESS" : "", 
+								"ERR_MSG" : ""
+							}
+						}
+					</div>
+				</div>	
+			</div>
+			<div class="api">
+				<div class="name">
+					GetLastSeqSet
+					<span>Get Last Sqeunce No.</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/GetLastSeqSet(ZTSHOP='GA',ZTLINE='T1-01',ZTLH='',ZTRH='X')?$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_LOGIO</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTSHOP</div>
+							<div>Shop</div>
+						</div>
+						<div class="key">
+							<div>ZTLINE</div>
+							<div>Line</div>
+						</div>
+						<div class="key">
+							<div>ZTLH</div>
+							<div>Left Hand Side</div>
+						</div>
+						<div class="key">
+							<div>ZTRH</div>
+							<div>Right Hand Side</div>
+						</div>
+						<div>
+							<div>SEQ_NO</div>
+							<div>Sequence Number</div>
+						</div>
+						<div>
+							<div>VIN_NO</div>
+							<div>Vin Number</div>
+						</div>
+						<div>
+							<div>MODEL_CODE</div>
+							<div>Model Code</div>
+						</div>
+						<div>
+							<div>BODY_NO</div>
+							<div>Body Number</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"d" : {
+								"__metadata" : { 
+									"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetLastSeqSet(ZTSHOP='',ZTLINE='',ZTLH='',ZTRH='')", 
+									"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetLastSeqSet(ZTSHOP='',ZTLINE='',ZTLH='',ZTRH='')", 
+									"type" : "Z_HALO_SRV.GetLastSeq" 
+								}, 
+								"ZTSHOP" : "", 
+								"ZTLINE" : "", 
+								"ZTLH" : "", 
+								"ZTRH" : "", 
+								"SEQ_NO" : "091287", 
+								"VIN_NO" : "C2F987654", 
+								"MODEL_CODE" : "C2F", 
+								"BODY_NO" : "987654", 
+								"SUCESS" : "", 
+								"ERR_MSG" : ""
+							}
+						}
+					</div>
+				</div>	
+			</div>
+			<div class="api">
+				<div class="name">
+					GetVinNoSet
+					<span>Get VIN No.</span>
+				</div>
+				<div class="spec-group">
+					<div class="method spec">GET</div>
+					<div class="url spec">
+						/sap/opu/odata/SAP/Z_HALO_SRV/GetLastSeqSet(ZTSHOP='GA',ZTLINE='T1-01',ZTLH='',ZTRH='X')?$format=json<span class="copy"></span>
+					</div>
+					<div class="table spec">ZTHA_SEQNO</div>
+					<div class="table-description spec">
+						<div class="key">
+							<div>ZTBADG</div>
+							<div>Badge Number</div>
+						</div>
+						<div class="key">
+							<div>SEQ_NO</div>
+							<div>Sequence Number</div>
+						</div>
+						<div class="key">
+							<div>VIN_NO</div>
+							<div>Vin Number</div>
+						</div>
+						<div>
+							<div>MODEL_CODE</div>
+							<div>Model Code</div>
+						</div>
+						<div>
+							<div>BODY_NO</div>
+							<div>Body Number</div>
+						</div>
+						<div>
+							<div>RP06_SDATE</div>
+							<div>Date</div>
+						</div>
+						<div>
+							<div>RP06_SERIAL</div>
+							<div>Serial</div>
+						</div>
+						<div>
+							<div>FOUND</div>
+							<div>Found</div>
+						</div>
+					</div>
+					<div class="json spec">
+						{
+							"d" : {
+								"__metadata" : { 
+									"id" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetVinNoSet(ZTBADG='00000000000000123456',SEQ_NO='310287',VIN_NO='C2F987654')", 
+									"uri" : "http://haeccd00.hmmausa.com:8000/sap/opu/odata/SAP/Z_HALO_SRV/GetVinNoSet(ZTBADG='00000000000000123456',SEQ_NO='310287',VIN_NO='C2F987654')", 
+									"type" : "Z_HALO_SRV.GetVinNo" 
+								}, 
+								"ZTBADG" : "00000000000000123456", 
+								"SEQ_NO" : "310287", 
+								"VIN_NO" : "C2F987654", 
+								"MODEL_CODE" : "C2F", 
+								"BODY_NO" : "987654", 
+								"RP06_SDATE" : "20190831", 
+								"RP06_SERIAL" : "0287", 
+								"FOUND" : "Y"
+							}
+						}
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+</main>
