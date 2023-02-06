@@ -25,3 +25,10 @@ For argument validation to controllers, Joi is being used.
 -   /model: Contains models
 -   /view: Contains views
 - /setting: Contains reusuable global settings
+
+[Run]
+```
+npm run dev
+npm run start
+npm run test
+```
