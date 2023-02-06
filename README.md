@@ -18,10 +18,10 @@ For unit testing, Jest is being used.
 For argument validation to controllers, Joi is being used.
 
 [Folder Structure]
-/assets: Static assets can be accssed publicly
-/class: Contains re-usable core classes
-/mvc: Contains Model, View, and Controller
-  /controller: Folder name equally matches with URL. 'index' class static method will be considered as '/' url
-  /model: Contains models
-  /view: Contains views
-/setting: Contains reusuable global settings
+- /assets: Static assets can be accssed publicly
+- /class: Contains re-usable core classes
+- /mvc: Contains Model, View, and Controller
+- /controller: Folder name equally matches with URL. 'index' class static method will be considered as '/' url
+-   /model: Contains models
+-   /view: Contains views
+- /setting: Contains reusuable global settings
