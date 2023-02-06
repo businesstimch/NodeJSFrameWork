@@ -31,10 +31,34 @@ For argument validation to controllers, Joi is being used.
 /setting: Contains reusuable global settings
 ```
 
-**How to start**
+**How Start**
 
 ```
 npm run dev
 npm run start
 npm run test
+```
+
+**How Controller Works**
+
+To create new url, you will just need to create a new controller.
+```
+[URL Example]
+/mvc/controller/index.js -> '/' in url
+/mvc/controller/hello/index.js -> '/hello/' in url
+/mvc/controller/hello/world.js -> '/hello/world/' in url
+/mvc/controller/hello/world.js -> '/hello/world/add' in url. In this case, 'add' class method will be called.
+```
+
+**Controller Rule**
+
+Any controller named with _(underscore) will not be accessible from url. 
+For example, _iAmPrivateMethod method will be accessible through url even though the class methid is declared in a controller.
+'/_iAmPrivateMethod' will generate 404 error.
+
+```
+static async _iAmPrivateMethod(req) {
+  // I am private controller method. Can not be accessed from the outside of the world!
+}
+
 ```
