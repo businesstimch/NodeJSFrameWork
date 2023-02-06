@@ -1,2 +1,5 @@
-const _BaseDir = require('path').dirname(require.main.filename);
-const Core = require(`${_BaseDir}/Core`);
+require('dotenv').config()
+const { _BaseDir } = process.env;
+const { Core } = require(`${_BaseDir}/Core`);
+Core.start();
+module.exports.Core = Core;

@@ -1,6 +1,6 @@
 'use strict'
-const path = require('path');
-const _BaseDir = path.dirname(require.main.filename);
+require('dotenv').config()
+const { _BaseDir } = process.env;
 const { promisify } = require("util");
 
 var fs = require('fs');

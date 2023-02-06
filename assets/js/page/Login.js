@@ -30,7 +30,6 @@ const Page = new function() {
 				url: _AjaxURL + 'auth',
 				data: "id=" + encodeURIComponent(id) + "&ps=" + encodeURIComponent(password),
 				success: function(Result) {
-					Result = JSON.parse(Result);
 					if(Result.ack) {
 						if(Result.redirect != "") window.location.href = Result.redirect;
 					} else if(Result.err_msg != '') msg('LOGIN ERROR', Result.err_msg, 'red');

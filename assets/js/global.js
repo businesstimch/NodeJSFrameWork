@@ -1,5 +1,5 @@
 "use strict"
-const URL_Prefix = 'http://Put_APIURL';
+const URL_Prefix = 'http://AddURLPrefix';
 const _AjaxURL = window.location.pathname;
 var _Hash = {};
 var _filterData = {};

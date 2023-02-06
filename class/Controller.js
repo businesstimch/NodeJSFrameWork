@@ -1,6 +1,6 @@
-const path = require('path');
-const _rootPath = path.dirname(require.main.filename);
-const Base = require(_rootPath + '/class/Base');
+require('dotenv').config()
+const { _BaseDir } = process.env;
+const Base = require(_BaseDir + '/class/Base');
 class Controller extends Base {
 
 	static {
@@ -9,7 +9,7 @@ class Controller extends Base {
 
 	static async generalPage(Page) {
 		var HTML = await this.Load('View', 'header.html', {
-			Title: 'Page not found | Halo | Hyundai Advanced Login Operations',
+			Title: 'Page not found',
 			isLogin: false,
 			controllerUrlInDB: this.controllerUrlInDB
 		});

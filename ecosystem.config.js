@@ -1,6 +1,6 @@
 module.exports = {
 	apps : [{
-		name: 'KALO',
+		name: 'NodeJS Framework',
 		script: 'index.js',
 		instances: 1,
 		detached: true,

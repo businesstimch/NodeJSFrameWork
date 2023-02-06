@@ -1,13 +1,14 @@
 {
 	"MySQL" : {
-		"host": "localhost",
-		"user": "root",
-		"password" : "password",
-		"database" : "database"
+		"host": "Development Server IP",
+		"user": "Add User Here",
+		"password" : "Add DB Development Password",
+		"database" : "Database Name"
 	},
 	"Redis": { 
 		"url": "redis://127.0.0.1",
 		"legacyMode": true,
-		"port": 6379
+		"port": 6379,
+		"password": "Redis Password"
 	}
 }

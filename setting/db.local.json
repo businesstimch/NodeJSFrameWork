@@ -1,15 +1,15 @@
 {
 	"MySQL" : {
-		"host": "ip address",
-		"user": "kalo",
-		"password" : "password",
-		"database" : "database"
+		"host": "localhost",
+		"user": "Add User Here",
+		"password" : "Add DB Development Password",
+		"database" : "Database Name"
 	},
 	"Redis": { 
-		"url": "redis://url",
+		"url": "redis://127.0.0.1",
 		"legacyMode": true,
 		"port": 6379,
-		"password": "password"
+		"password": "Redis Password"
 	}
 
 }

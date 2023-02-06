@@ -1,15 +1,26 @@
-const path = require('path');
+require('dotenv').config()
 const md5 = require("md5"); 
-const _BaseDir = path.dirname(require.main.filename);
+const { _BaseDir } = process.env;
 const moment = require('moment');
 const Config = require( _BaseDir + '/setting/Config');
+const Joi = require('joi');
 
 class General {
 
-	static escape(URL) {
-		return encodeURIComponent(String(URL).replace(/\'/g,"''").replace(" ","%20"));
-		// return encodeURIComponent(String(URL).replace(/\'/g,"''"));
-	}
+	static escape = (URL) =>encodeURIComponent(String(URL).replace(/\'/g,"''").replace(" ","%20"));
+	
+	static generalAckErrorHandler = (res) => res.body.should.have.property("acsk");
+	
+	static _apiTokenSchema =
+		Joi
+			.string()
+			.valid(Config.KAPSApiToken)
+			.required()
+			.messages({
+				'any.only': "Token is not valid."
+			})
+
+	static extractValidationError = (error) => error?.details?.map(x => x.message).join(' ');
 	static errorMsg(id) {
 		var _msgs = {
 			"general": "Unkown error occurred, please try again."

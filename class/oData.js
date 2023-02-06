@@ -1,6 +1,6 @@
-const path = require('path');
-const _rootPath = path.dirname(require.main.filename);
-const Config = require( _rootPath + '/setting/Config');
+require('dotenv').config()
+const { _BaseDir } = process.env;
+const Config = require( _BaseDir + '/setting/Config');
 
 const axios = require('axios');
 class oData {
