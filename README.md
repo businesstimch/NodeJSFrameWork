@@ -1,6 +1,5 @@
 # NodeJSFrameWork
 NodeJS Web Framework in MVC pattern
-
 This framework has been used in various large-scale projects in global companies.
 
 To run this framework properly you will need,
